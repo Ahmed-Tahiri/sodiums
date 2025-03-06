@@ -1,11 +1,10 @@
 import { useState } from 'react'
-
+import { Leaderboard } from './components/pages/Leaderboard'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Extra Files Deleted</h1>
+      <Leaderboard />
+
     </>
   )
 }
