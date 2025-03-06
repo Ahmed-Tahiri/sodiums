@@ -8,6 +8,16 @@ import gem from './../../assets/images/gem.webm';
 import babyBoss from './../../assets/images/babyBoss.png';
 import { BsFillPentagonFill } from "react-icons/bs";
 export let Leaderboard = () => {
+
+    let profiles = [
+        { 'number': '#4' },
+        { 'number': '#5' },
+        { 'number': '#6' },
+        { 'number': '#7' },
+        { 'number': '#8' },
+        { 'number': '#9' },
+        { 'number': '#10' },
+    ]
     return (
         <>
             <BgDesign />
@@ -112,7 +122,40 @@ export let Leaderboard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="leaderboardBottom"></div>
+
+                <div className="leaderboardBottom">
+                    <div className="leaderboardHeading">
+                        <p className="playerNumber subHeading">#</p>
+                        <p className="playerUsername subHeading">Username</p>
+                        <div className="wegRew">  <p className="wagered subHeading">Wagered</p>
+                            <p className="reward subHeading">Reward</p></div>
+
+                    </div>
+                    <div className="leaderBoardProfilesContainer">
+                        {
+                            profiles.map((prof) => <div className="leaderboardProfile" key={`profile${prof.number}`}>
+                                <p className="playerNumber"><span>{prof.number}</span></p>
+                                <div className="playerData">
+                                    <img src={babyBoss} alt="Player Profile Picture" />
+                                    <span className="playerName">Bo****y</span>
+                                </div>
+                                <div className="wegRewContainer">
+                                    <p className="wageredData">
+                                        <span className="rewardIcon"></span>
+                                        <span className="rewardPrize">9,291.55</span>
+                                    </p>
+                                    <p className="rewardData">
+                                        <span className="rewardIcon"></span>
+                                        <span className="rewardPrize">800.00</span>
+                                    </p>
+                                </div>
+                            </div>
+                            )
+
+                        }
+                    </div>
+                </div>
+
             </section>
         </>
     );

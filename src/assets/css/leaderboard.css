@@ -4,6 +4,7 @@
   --powder-blue: #19caf634;
   --white: #fff;
   --black: #000;
+  --dim-grey: #9c9c9c;
 }
 .leaderboardSection {
   width: 100%;
@@ -253,6 +254,147 @@
           > .periodLetter {
             margin-top: -0.2rem;
             font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  > .leaderboardBottom {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    > .leaderboardHeading {
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      & .subHeading {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: var(--dim-grey);
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+      > .playerUsername {
+        width: 55%;
+      }
+
+      > .playerNumber {
+        width: 5%;
+        margin-left: 2rem;
+      }
+      .wegRew {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        > .wagered {
+          padding-left: 2rem;
+        }
+      }
+    }
+    > .leaderBoardProfilesContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      > .leaderboardProfile {
+        background-color: #0f2126;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 1.6rem;
+        padding: 1rem 2.5rem;
+        > .playerData {
+          margin-right: 4rem;
+          width: 55%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          > img {
+            width: 8%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 0.2rem solid var(--secondary-blue);
+          }
+          > .playerName {
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: "poppins", serif;
+            width: 92%;
+          }
+        }
+        > .playerNumber {
+          width: 5%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & span {
+            margin-right: 0rem;
+            background-color: var(--black);
+            height: 3.4rem;
+            width: 3.5rem;
+            border-radius: 50%;
+            border: 0.2rem solid var(--secondary-blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-family: "poppins", serif;
+          }
+        }
+        > .wegRewContainer {
+          width: 30%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          > .wageredData {
+            width: 20%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 0.5rem;
+            > .rewardIcon {
+              display: inline-block;
+              background-image: url("./../images/bigSVG.svg");
+              height: 1.5rem;
+              aspect-ratio: 1;
+            }
+            > .rewardPrize {
+              font-size: 1.4rem;
+              font-weight: 500;
+              font-family: "poppins", serif;
+              color: var(--white);
+            }
+          }
+          > .rewardData {
+            width: 20%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 0.5rem;
+            > .rewardIcon {
+              display: inline-block;
+              background-image: url("./../images/bigSVG.svg");
+              height: 1.5rem;
+              aspect-ratio: 1;
+            }
+            > .rewardPrize {
+              font-size: 1.4rem;
+              font-weight: 500;
+              font-family: "poppins", serif;
+              color: #a1f243;
+            }
           }
         }
       }
