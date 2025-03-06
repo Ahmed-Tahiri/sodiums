@@ -75,10 +75,6 @@
     }
   }
 }
-
-/* .notActive {
-  color: var(--white);
-} */
 .active {
   color: var(--primary-blue) !important;
 }
@@ -104,12 +100,6 @@
       }
       & .hamBurgerBtn {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        background-color: transparent;
-        border: none;
-        color: var(--white);
       }
       > .navUl {
         position: absolute;
@@ -126,15 +116,6 @@
           list-style: none;
           width: 100%;
           text-align: center;
-          > a::before {
-            content: "";
-            bottom: -0.2rem;
-            height: 0.2rem;
-            width: 0%;
-            background-color: var(--primary-blue);
-            position: absolute;
-            border-radius: 0.2rem;
-          }
           > a {
             width: 100%;
             font-size: 1.5rem;

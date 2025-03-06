@@ -20,7 +20,7 @@ export let Leaderboard = () => {
     ]
     return (
         <>
-            {/* <BgDesign /> */}
+            <BgDesign />
             <Navbar />
             {/* <section className="leaderboardSection">
                 <div className="leaderboardTop">
