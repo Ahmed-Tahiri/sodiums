@@ -20,9 +20,9 @@ export let Leaderboard = () => {
     ]
     return (
         <>
-            <BgDesign />
+            {/* <BgDesign /> */}
             <Navbar />
-            <section className="leaderboardSection">
+            {/* <section className="leaderboardSection">
                 <div className="leaderboardTop">
                     <div className="leaderboardTextContent">
                         <div className="leaderboardHeading">
@@ -156,7 +156,7 @@ export let Leaderboard = () => {
                     </div>
                 </div>
 
-            </section>
+            </section> */}
         </>
     );
 }
