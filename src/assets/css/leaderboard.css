@@ -267,6 +267,7 @@
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
+    padding-bottom: 13rem;
     > .leaderboardHeading {
       width: 90%;
       display: flex;
@@ -573,6 +574,7 @@
       margin-top: 5rem;
       width: 100%;
       gap: 0.5rem;
+      padding-bottom: 5rem;
       > .leaderboardHeading {
         width: 100%;
         display: flex;

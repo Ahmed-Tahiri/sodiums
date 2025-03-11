@@ -1,6 +1,7 @@
-import { Navbar } from "../navbar";
 import './../../assets/css/leaderboard.css';
+import { Navbar } from "../navbar";
 import { BgDesign } from "../bgDesign";
+import { Footer } from '../Footer';
 import CSGOLogo from './../../assets/images/CSGOBIG.png';
 import RAINGG from '../../assets/images/RAINGG.svg'
 import CLASHGG from "../../assets/images/CLASH.svg";
@@ -155,6 +156,7 @@ export let Leaderboard = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 }
