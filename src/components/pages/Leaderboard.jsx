@@ -6,7 +6,6 @@ import RAINGG from '../../assets/images/RAINGG.svg'
 import CLASHGG from "../../assets/images/CLASH.svg";
 import gem from './../../assets/images/gem.webm';
 import babyBoss from './../../assets/images/babyBoss.png';
-import { BsFillPentagonFill } from "react-icons/bs";
 export let Leaderboard = () => {
 
     let profiles = [

@@ -102,6 +102,7 @@
         display: flex;
       }
       > .navUl {
+        display: none;
         position: absolute;
         flex-direction: column;
         justify-content: center;
@@ -127,7 +128,7 @@
 }
 
 .none {
-  display: none !important;
+  display: none;
 }
 .flex {
   display: flex !important;
