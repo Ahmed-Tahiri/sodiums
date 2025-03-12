@@ -3,6 +3,7 @@ import { Leaderboard } from './components/pages/Leaderboard';
 import { Home } from './components/pages/Home';
 import { Bonuses } from './components/pages/Bonuses';
 import { Cases } from './components/pages/Cases';
+import { Profile } from './components/pages/Profile';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/cases',
     element: <Cases />
+  },
+  {
+    path: '/profile',
+    element: <Profile />
   },
 ]);
 function App() {

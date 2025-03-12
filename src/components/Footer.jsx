@@ -6,7 +6,7 @@ import kickLogo from './../assets/images/kickLogo.png';
 import XLogo from './../assets/images/XLogo.png';
 import { Link } from 'react-router-dom';
 export let Footer = () => {
-
+    let path = window.location.pathname;
     return (
         <footer className="footer">
             <div className='footerTop'>
@@ -31,8 +31,8 @@ export let Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className='borderContainer'></div>
-            <div className='footerBottom'>
+            <div className={path === '/profile' ? 'none' : 'borderContainer'}></div>
+            <div className={path === '/profile' ? 'none' : 'footerBottom'}>
                 <p className='infoMessage'>Gamble responsibility (18+). Only gamble for fun and enjoyment with money you can afford to lose. We do not take responsibility for any losses from gambling in casinos and betting sites which are linked or promoted on our website(s).</p>
             </div>
         </footer>
