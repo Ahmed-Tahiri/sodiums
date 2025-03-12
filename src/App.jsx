@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Leaderboard } from './components/pages/Leaderboard';
 import { Home } from './components/pages/Home';
 import { Bonuses } from './components/pages/Bonuses';
+import { Cases } from './components/pages/Cases';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/leaderboard',
     element: <Leaderboard />
+  },
+  {
+    path: '/cases',
+    element: <Cases />
   },
 ]);
 function App() {

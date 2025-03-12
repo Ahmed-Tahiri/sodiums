@@ -6,8 +6,8 @@ import './../../assets/css/bonuses.css';
 import './../../assets/css/bonusCards.css';
 export let Bonuses = () => {
     return <>
-        <Navbar />
         <BgDesign />
+        <Navbar />
         <section className="bonusSection">
             <div className="bonusTop">
                 <div className="bonusTextContent">

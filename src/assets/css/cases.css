@@ -1,0 +1,145 @@
+:root {
+  --primary-blue: #19c9f6;
+  --secondary-blue: #19caf660;
+  --powder-blue: #19caf634;
+  --white: #fff;
+  --black: #000;
+  --dim-grey: #9c9c9c;
+  --footerBg: #0f1417;
+  --footerGreyText: #616362;
+  --light-golden: #ffc043;
+  --red-border: #ff3535;
+}
+.casesSection {
+  width: 100%;
+  padding: 1rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0 12rem;
+  gap: 8rem;
+  > .casesTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    > .casesTextContent {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 7rem;
+      > .casesHeading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        > .sectionHeading {
+          width: 100%;
+          text-align: center;
+          font-family: "Poppins", serif;
+          color: var(--primary-blue);
+          font-size: 5rem;
+        }
+        > .sectionPara {
+          font-size: 2.1rem;
+          color: var(--white);
+          background-color: var(--black);
+        }
+      }
+    }
+  }
+  > .casesBottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > .casesContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3.5rem;
+      > .caseCard {
+        z-index: 3;
+        min-width: 43%;
+        width: 43%;
+        max-width: 43%;
+        min-height: 20rem;
+        display: flex;
+        flex-direction: row;
+        border: 0.2rem solid var(--secondary-blue);
+        border-radius: 1.5rem;
+        padding: 2rem 1rem;
+        gap: 3rem;
+        background-clip: padding-box;
+        > img {
+          width: 19rem;
+          height: 19rem;
+        }
+        > .caseTextContainer {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: start;
+          gap: 4rem;
+          padding-right: 1.5rem;
+          > .caseHeading {
+            font-family: "Poppins", serif;
+            font-size: 2.3rem;
+            font-weight: 600;
+          }
+          > .casePrize {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 0.7rem;
+            > p {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+
+              > span {
+                font-family: "Poppins", serif;
+                font-size: 1.4rem;
+                font-weight: 500;
+              }
+            }
+          }
+          > .caseBtn {
+            background-color: var(--primary-blue);
+            border: none;
+            color: var(--white);
+            width: 100%;
+            font-family: "Poppins", serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-radius: 1rem;
+            padding: 0.5rem 1rem;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      > .dailyCard {
+        background-image: linear-gradient(to right, #19caf634, #0c91b2);
+      }
+      > .monthlyCard {
+        background-image: linear-gradient(to right, #19caf634, #b32a48);
+      }
+      > .weeklyCard {
+        background-image: linear-gradient(to right, #19caf634, #9a0ad5);
+      }
+    }
+  }
+}
