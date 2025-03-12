@@ -1,0 +1,22 @@
+:root {
+  --primary-blue: #19c9f6;
+  --secondary-blue: #19caf660;
+  --powder-blue: #19caf634;
+  --white: #fff;
+  --black: #000;
+  --dim-grey: #9c9c9c;
+  --footerBg: #0f1417;
+  --footerGreyText: #616362;
+  --light-golden: #ffc043;
+  --red-border: #ff3535;
+}
+.bonusSection {
+  width: 100%;
+  padding: 1rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10rem 0 5rem;
+  gap: 8rem;
+}

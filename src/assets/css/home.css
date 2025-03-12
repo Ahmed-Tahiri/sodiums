@@ -21,12 +21,14 @@
     color: var(--primary-blue);
     font-size: 4rem;
     font-weight: 600;
+    background-color: var(--black);
   }
   > .sectionPara {
     font-family: "Poppins";
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 400;
+    background-color: var(--black);
   }
 }
 
