@@ -62,5 +62,162 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    .storePreferences {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 2rem;
+      padding: 0 8rem;
+      > .searchBox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--powder-blue);
+        border: 0.2rem solid var(--dim-grey);
+        border-radius: 1rem;
+        padding: 0.5rem 2rem;
+        > input {
+          width: 97.5%;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          font-family: "Poppins", serif;
+          font-size: 1.5rem;
+          color: var(--white);
+        }
+        > span {
+          width: 2.5%;
+          display: flex;
+          font-size: 2rem;
+          color: var(--dim-grey);
+        }
+      }
+      > .filterContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+        > .filterBtn {
+          height: 3rem;
+          width: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--powder-blue);
+          border: none;
+          font-size: 2.5rem;
+          border-radius: 0.7rem;
+          padding: 0.2rem;
+          border: 0.2rem solid var(--dim-grey);
+          color: var(--dim-grey);
+        }
+        > .sliderMessage {
+          color: var(--dim-grey);
+          font-family: "Poppins", serif;
+          font-size: 1.6rem;
+          background-color: var(--black);
+        }
+      }
+    }
+    > .storeCardsContainer {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      > .storeCard {
+        background-color: var(--powder-blue);
+        width: 20%;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        border: 0.2rem solid var(--secondary-blue);
+
+        > .stockContainer {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          align-items: center;
+          gap: 0.4rem;
+          > .stockText {
+            font-family: "Poppins", serif;
+            font-size: 1.3rem;
+            color: var(--dim-grey);
+            font-weight: 600;
+          }
+          > .stockQua {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Poppins", serif;
+            font-size: 1.4rem;
+            color: var(--white);
+            font-weight: 600;
+            background-color: var(--powder-blue);
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            border: 0.2rem solid var(--dim-grey);
+          }
+        }
+        > .storeItemImg {
+          width: 95%;
+        }
+        > .itemDetails {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: start;
+          margin-top: 0.5rem;
+          > .itemText {
+            font-size: 1rem;
+            display: flex;
+            width: 100%;
+            border-bottom: 0.1rem solid var(--primary-blue);
+            color: var(--primary-blue);
+            font-family: "Poppins", serif;
+            font-weight: 500;
+          }
+          > .itemName {
+            display: flex;
+            width: 100%;
+            color: var(--white);
+            font-size: 1.3rem;
+            font-family: "Poppins", serif;
+            font-weight: 500;
+          }
+        }
+        > .purchaseBtn {
+          margin: 2.5rem 0 1rem;
+          width: 100%;
+          border: none;
+          padding: 0.7rem 1rem;
+          font-size: 1.3rem;
+          font-family: "Poppins", serif;
+          font-weight: 600;
+          border-radius: 0.7rem;
+          color: var(--white);
+          background-color: var(--primary-blue);
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }

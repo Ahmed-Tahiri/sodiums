@@ -113,7 +113,7 @@ export let Profile = () => {
                             <div className="inventorySection">
                                 <h2 className="sectionHeading">My Inventory</h2>
                                 <div className="inventoryCardsContainer">
-                                    {inventoryData.map((inventoryCard, index) => <InventoryCard {...inventoryCard} />)}
+                                    {inventoryData.map((inventoryCard, index) => <InventoryCard {...inventoryCard} key={inventoryCard.productId} />)}
                                 </div>
                             </div>
                         </div>
