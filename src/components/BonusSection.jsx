@@ -1,3 +1,4 @@
+import './../assets/css/Bonuses.css';
 import CSGOBIG from './../assets/images/CSGOBIG.png';
 import RallLogo from './../assets/images/RALLLogo.png'
 export let BonusSection = () => {
