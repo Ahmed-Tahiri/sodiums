@@ -4,6 +4,7 @@ import discordLogo from './../assets/images/discordLogo.png';
 import ytLogo from './../assets/images/ytLogo.png';
 import kickLogo from './../assets/images/kickLogo.png';
 import XLogo from './../assets/images/XLogo.png';
+import { Link } from 'react-router-dom';
 export let Footer = () => {
 
     return (
@@ -16,9 +17,9 @@ export let Footer = () => {
                 <div className='footerLinksSection'>
                     <nav className='footerNav'>
                         <ul className='footerNavUl'>
-                            <li className='footerNavLi'><a href='#'>Home</a></li>
-                            <li className='footerNavLi'><a href='#'>Bonuses</a></li>
-                            <li className='footerNavLi'><a href='#'>Leaderboards</a></li>
+                            <li className='footerNavLi'><a href='/'>Home</a></li>
+                            <li className='footerNavLi'><a href='/bonuses'>Bonuses</a></li>
+                            <li className='footerNavLi'><a href='/leaderboards'>Leaderboards</a></li>
                         </ul>
                     </nav>
 

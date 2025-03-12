@@ -3,11 +3,13 @@ import './../index.css'
 import sodiumLogo from './../assets/images/SodiumTransparentLogo.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 export let Navbar = () => {
     let [isOpen, setIsOpen] = useState(false);
     let hamburgerHandler = () => {
         setIsOpen(!isOpen);
     }
+    let path = window.location.pathname;
     return (
         <>
             <header className="header">
@@ -16,9 +18,9 @@ export let Navbar = () => {
                         <img src={sodiumLogo} alt="sodium Logo" />
                     </div>
                     <ul className={`navUl ${isOpen ? 'flex' : 'none'}`}>
-                        <li onClick={hamburgerHandler} className='navLi'><a className='' href='#'>Home</a></li>
-                        <li onClick={hamburgerHandler} className='navLi'><a className='' href='#'>Bonuses</a></li>
-                        <li onClick={hamburgerHandler} className='navLi'><a className='active' href='#'>Leaderboards</a></li>
+                        <li onClick={hamburgerHandler} className='navLi'><Link to='/' className={path === '/' ? 'active' : ''}>Home</Link></li>
+                        <li onClick={hamburgerHandler} className='navLi'><Link to='/bonuses' className={path === '/bonuses' ? 'active' : ''} href='#'>Bonuses</Link></li>
+                        <li onClick={hamburgerHandler} className='navLi'><Link to='/leaderboard' className={path === '/leaderboard' ? 'active' : ''}>Leaderboards</Link></li>
                     </ul>
                     <button onClick={hamburgerHandler} type='Btn' className='hamBurgerBtn'><GiHamburgerMenu /></button>
                 </nav>

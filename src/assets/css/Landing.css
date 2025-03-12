@@ -1,0 +1,112 @@
+:root {
+  --primary-blue: #19c9f6;
+  --secondary-blue: #19caf660;
+  --powder-blue: #19caf634;
+  --white: #fff;
+  --black: #000;
+  --dim-grey: #9c9c9c;
+  --footerBg: #0f1417;
+  --footerGreyText: #616362;
+}
+.main {
+  overflow: hidden;
+  width: 100%;
+}
+.landingSection {
+  width: 100%;
+  padding: 1rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 3rem 0;
+
+  > .weaponImageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999999;
+    > .sniper {
+      position: absolute;
+      top: -12rem;
+      left: -17rem;
+      height: 35rem;
+    }
+    > .pistol {
+      position: absolute;
+      top: 22rem;
+      left: 13rem;
+      height: 15rem;
+    }
+    > .pistolSp {
+      position: absolute;
+      height: 22rem;
+      top: -5rem;
+      right: 9rem;
+    }
+    > .AR {
+      position: absolute;
+      height: 35rem;
+      top: 15rem;
+      right: -18rem;
+    }
+  }
+  > .landingMainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    > .landingMainImg {
+      height: 40rem;
+    }
+    > .landingPara {
+      font-family: "Poppins", serif;
+      color: var(--white);
+      font-size: 1.7rem;
+      letter-spacing: 0.05rem;
+      background-color: var(--black);
+    }
+    > .landingBtns {
+      margin-top: 4rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        padding: 1rem 3rem;
+        border-radius: 1.3rem;
+        border: none;
+        > a {
+          text-decoration: none;
+          font-family: "Poppins", serif;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 0.03rem;
+        }
+        &:first-child {
+          background-color: var(--primary-blue);
+          > a {
+            color: var(--white);
+          }
+        }
+        &:last-child {
+          background-color: var(--white);
+          > a {
+            color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}

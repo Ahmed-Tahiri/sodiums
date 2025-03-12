@@ -68,6 +68,9 @@
             text-decoration: none;
             color: var(--footerGreyText);
             font-weight: 600;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
