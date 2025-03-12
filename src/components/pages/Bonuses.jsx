@@ -1,7 +1,6 @@
 import { Navbar } from "../navbar";
 import { BgDesign } from "../bgDesign";
 import { Footer } from '../Footer';
-import { BonusSection } from "../BonusSection";
 import { BonusCards } from "../BonusCards";
 import './../../assets/css/bonuses.css';
 import './../../assets/css/bonusCards.css';

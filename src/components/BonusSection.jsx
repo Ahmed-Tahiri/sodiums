@@ -2,7 +2,7 @@ import './../assets/css/homeBonuses.css';
 import './../assets/css/bonusCards.css';
 import { BonusCards } from './BonusCards';
 export let BonusSection = () => {
-    return <>
+    return (<>
         <section className="bonusSection">
             <div className="bonusTop sectionTop">
                 <h2 className="sectionHeading">Bonuses</h2>
@@ -14,5 +14,5 @@ export let BonusSection = () => {
                 </div>
             </div>
         </section>
-    </>
+    </>);
 }
