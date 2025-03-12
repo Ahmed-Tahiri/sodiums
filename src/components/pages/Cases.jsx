@@ -51,7 +51,7 @@ export let Cases = () => {
 
 
                         {casesData.map((singleCase) => {
-                            return <div className={`caseCard ${singleCase.extraClass}`}>
+                            return <div className={`caseCard ${singleCase.extraClass}`} key={singleCase.caseId}>
                                 <img src={singleCase.caseImg} alt='Case Picture' />
                                 <div className='caseTextContainer'>
                                     <h4 className='caseHeading'>{singleCase.caseName}</h4>
