@@ -4,6 +4,7 @@ import { Home } from './components/pages/Home';
 import { Bonuses } from './components/pages/Bonuses';
 import { Cases } from './components/pages/Cases';
 import { Profile } from './components/pages/Profile';
+import { Store } from './components/pages/Store';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: '/profile',
     element: <Profile />
+  },
+  {
+    path: '/store',
+    element: <Store />
   },
 ]);
 function App() {

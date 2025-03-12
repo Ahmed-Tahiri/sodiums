@@ -1,0 +1,66 @@
+:root {
+  --primary-blue: #19c9f6;
+  --secondary-blue: #19caf660;
+  --powder-blue: #19caf634;
+  --white: #fff;
+  --black: #000;
+  --dim-grey: #9c9c9c;
+  --footerBg: #0f1417;
+  --footerGreyText: #616362;
+  --light-golden: #ffc043;
+  --red-border: #ff3535;
+  --input-BGC: #052932;
+}
+.storeSection {
+  width: 100%;
+  padding: 1rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0 12rem;
+  gap: 5rem;
+  > .storeTop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    > .storeTextContent {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 7rem;
+      > .storeHeading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        > .sectionHeading {
+          width: 100%;
+          text-align: center;
+          font-family: "Poppins", serif;
+          color: var(--primary-blue);
+          font-size: 5rem;
+        }
+        > .sectionPara {
+          font-weight: 400;
+          font-size: 2.1rem;
+          color: var(--white);
+          background-color: var(--black);
+        }
+      }
+    }
+  }
+  > .storeBottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
