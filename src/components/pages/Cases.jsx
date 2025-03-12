@@ -3,7 +3,7 @@ import CaseImg from './../../assets/images/case.png';
 import { BgDesign } from "../bgDesign"
 import { Footer } from "../Footer"
 import { Navbar } from "../navbar"
-
+import { CaseCard } from '../CaseCard';
 
 
 export let Cases = () => {
@@ -48,27 +48,7 @@ export let Cases = () => {
                 </div>
                 <div className="casesBottom">
                     <div className='casesContainer'>
-
-
-                        {casesData.map((singleCase) => {
-                            return <div className={`caseCard ${singleCase.extraClass}`} key={singleCase.caseId}>
-                                <img src={singleCase.caseImg} alt='Case Picture' />
-                                <div className='caseTextContainer'>
-                                    <h4 className='caseHeading'>{singleCase.caseName}</h4>
-                                    <div className='casePrize'>
-                                        <p>
-                                            <span>Min. Prize</span>
-                                            <span>Max. Prize</span>
-                                        </p>
-                                        <p>
-                                            <span>{singleCase.MinPrize}</span>
-                                            <span>{singleCase.MaxPrize}</span>
-                                        </p>
-                                    </div>
-                                    <button className='caseBtn'>Open Case</button>
-                                </div>
-                            </div>
-                        })}
+                        {casesData.map((singleCase, index) => <CaseCard {...singleCase} />)}
                     </div>
                 </div>
             </section>
