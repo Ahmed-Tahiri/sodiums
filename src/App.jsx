@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Leaderboard } from './components/pages/Leaderboard';
 import { Home } from './components/pages/Home';
+import { Bonuses } from './components/pages/Bonuses';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -8,7 +9,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/bonuses',
-    element: <Home />
+    element: <Bonuses />
   },
   {
     path: '/leaderboard',
