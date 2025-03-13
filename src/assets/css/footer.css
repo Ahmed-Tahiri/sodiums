@@ -361,7 +361,6 @@
               > span {
                 font-size: 1.3rem;
               }
-
               &:hover {
                 cursor: pointer;
               }
@@ -375,6 +374,74 @@
       padding-bottom: 1rem;
       > .infoMessage {
         width: 75%;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .footer {
+    padding: 5rem 12rem;
+    gap: 3.5rem;
+    > .borderContainer {
+      height: 0.4rem;
+    }
+    > .footerTop {
+      > .footerCopyright {
+        margin-top: -1rem;
+        gap: 3.5rem;
+        > img {
+          height: 5rem;
+        }
+        > .copyrightText {
+          font-size: 1.2rem;
+          font-family: "poppins", serif;
+          text-transform: uppercase;
+          color: var(--footerGreyText);
+          font-weight: 500;
+          line-height: 1.4rem;
+        }
+      }
+      > .footerLinksSection {
+        & .footerNavUl {
+          display: flex;
+          flex-direction: column;
+          gap: 1.4rem;
+          > .footerNavLi {
+            > a {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        & .socialLinks {
+          > .socialLink {
+            & a {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: start;
+              margin-top: -0.4rem;
+              text-decoration: none;
+              > img {
+                height: 3.5rem;
+              }
+              > span {
+                font-size: 1.3rem;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .footerBottom {
+      width: 100%;
+      padding-bottom: 1rem;
+      > .infoMessage {
+        width: 72%;
         font-size: 1.1rem;
       }
     }
