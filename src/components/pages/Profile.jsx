@@ -6,17 +6,8 @@ import karambit from './../../assets/images/karambit.png';
 import './../../assets/css/profile.css';
 import babyBoss from './../../assets/images/babyBoss.png';
 import { InventoryCard } from "../InventoryCard";
+import { ProfileForm } from "../ProfileForm";
 export let Profile = () => {
-    const [formData, setFormData] = useState({
-        streamTrade: "",
-        crrAdd: "",
-        rainggId: "",
-        CSGOBigId: "",
-        clashGGId: "",
-    });
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
     let inventoryData = [
         {
             productName: 'Karambit | Slaughter',
@@ -86,29 +77,7 @@ export let Profile = () => {
                         </div>
                         <div className="ProfileDetails">
                             <div className="idsSection">
-                                <form className="idsForm" onSubmit={(e) => e.preventDefault()}>
-                                    <div className="inputContainer">
-                                        <label htmlFor="streamTrade">Stream Trade URL</label>
-                                        <input type="text" id="streamTrade" name="streamTrade" value={formData.streamTrade} onChange={handleChange} />
-                                    </div>
-                                    <div className="inputContainer">
-                                        <label htmlFor="crrAdd">BTC / ETH / LTC Address</label>
-                                        <input type="text" id="crrAdd" name="crrAdd" value={formData.crrAdd} onChange={handleChange} />
-                                    </div>
-                                    <div className="inputContainer">
-                                        <label htmlFor="rainggId">RainGG ID</label>
-                                        <input type="text" id="rainggId" name="rainggId" value={formData.rainggId} onChange={handleChange} />
-                                    </div>
-                                    <div className="inputContainer">
-                                        <label htmlFor="CSGOBigId">CSGOBig ID</label>
-                                        <input type="text" id="CSGOBigId" name="CSGOBigId" value={formData.CSGOBigId} onChange={handleChange} />
-                                    </div>
-                                    <div className="inputContainer">
-                                        <label htmlFor="clashGGId">ClashGG ID</label>
-                                        <input type="text" id="clashGGId" name="clashGGId" value={formData.clashGGId} onChange={handleChange} />
-                                    </div>
-                                    <button type="submit" className="idFormBtn">Save and Verify</button>
-                                </form>
+                                <ProfileForm />
                             </div>
                             <div className="inventorySection">
                                 <h2 className="sectionHeading">My Inventory</h2>
