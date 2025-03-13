@@ -558,3 +558,94 @@
     }
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .bonusSection {
+    width: 100%;
+    padding: 1rem 18rem;
+    margin-top: 4.5rem;
+    > .bonusTop {
+      width: 100%;
+      gap: 1rem;
+      > .bonusTextContent {
+        gap: 6rem;
+        > .bonusHeading {
+          gap: 0.8rem;
+          > .sectionHeading {
+            font-size: 5.2rem;
+          }
+          > .sectionPara {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    > .bonusBottom {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > .bonusCardsContainer {
+        > .bonusCard {
+          & .gradientRed {
+            top: -25.2rem;
+          }
+          & .gradient {
+            top: -25.2rem;
+          }
+          & .color {
+            background-color: #141414;
+          }
+          & > .cardContent {
+            gap: 2rem;
+            > .imageCont {
+              height: 5rem;
+              > .bonusImage {
+                width: 14rem;
+              }
+            }
+
+            > .sponsorHeading {
+              margin-top: -2rem;
+              > .sponsorName {
+                font-size: 1.45rem;
+              }
+            }
+            > .bonusPrizeContainer {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem;
+              > .bonusDepositContainer {
+                width: 100%;
+                background-color: var(--black);
+                border-bottom: 0.3rem solid var(--primary-blue);
+                padding: 0.3rem 2rem;
+              }
+              > .bonusCodeContainer {
+                width: 100%;
+                background-color: var(--black);
+                border-bottom: 0.3rem solid var(--light-golden);
+                padding: 0.3rem 2rem;
+              }
+              > .redBorder {
+                border-bottom: 0.3rem solid var(--red-border);
+              }
+              & span {
+                font-size: 0.75rem;
+              }
+              & p {
+                font-size: 1.35rem;
+              }
+            }
+            > .claimBtn {
+              font-size: 1.4rem;
+              border-radius: 0.8rem;
+              padding: 0.8rem 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
