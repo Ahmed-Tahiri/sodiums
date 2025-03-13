@@ -21,6 +21,9 @@ export let Navbar = () => {
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/' className={path === '/' ? 'active' : ''}>Home</Link></li>
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/bonuses' className={path === '/bonuses' ? 'active' : ''} href='#'>Bonuses</Link></li>
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/leaderboard' className={path === '/leaderboard' ? 'active' : ''}>Leaderboards</Link></li>
+                        <li onClick={hamburgerHandler} className='navLi'><Link to='/store' className={path === '/store' ? 'active' : ''}>Store</Link></li>
+                        <li onClick={hamburgerHandler} className='navLi'><Link to='/cases' className={path === '/cases' ? 'active' : ''}>Cases</Link></li>
+                        <li onClick={hamburgerHandler} className='navLi'><Link to='/profile' className={path === '/profile' ? 'active' : ''}>Profile</Link></li>
                     </ul>
                     <button onClick={hamburgerHandler} type='Btn' className='hamBurgerBtn'><GiHamburgerMenu /></button>
                 </nav>
