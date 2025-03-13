@@ -272,3 +272,86 @@ body {
     opacity: 1;
   }
 }
+@media screen and (min-width: 999px) and (max-width: 1200px) {
+  #BgDesignContainer {
+    min-height: 68rem;
+    height: 68rem;
+    max-height: 73rem;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  #BgDesignContainer::before {
+    position: absolute;
+    z-index: 9999;
+    top: -3rem;
+    left: -31rem;
+    content: "";
+    width: 55rem;
+    height: 55rem;
+    transform: rotate(-45deg);
+    background: linear-gradient(
+      to right bottom,
+      #19caf657,
+      #19caf626,
+      #19caf607
+    );
+    border-radius: 5rem;
+    filter: blur(10rem);
+  }
+  #BgDesignContainer::after {
+    position: absolute;
+    z-index: 9999;
+    content: "";
+    top: -9rem;
+    right: -24rem;
+    content: "";
+    width: 35rem;
+    height: 35rem;
+    transform: rotate(-40deg);
+    background: linear-gradient(
+      to right bottom,
+      #19caf657,
+      #19caf626,
+      #19caf607
+    );
+    border-radius: 5rem;
+    filter: blur(10rem);
+  }
+  #BgDesign {
+    z-index: -9;
+    min-height: 68rem;
+    height: 68rem;
+    max-height: 73rem;
+    width: 100%;
+    position: absolute;
+    top: -7rem;
+    left: 0;
+    background-image: url("./../images/dots.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    -webkit-mask-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba(0, 0, 0, 0.5) 35%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0) 85%
+      ),
+      linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-composite: intersect;
+    mask-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba(0, 0, 0, 0.5) 35%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0) 85%
+      ),
+      linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    mask-composite: intersect;
+    opacity: 1;
+  }
+}
