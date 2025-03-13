@@ -67,6 +67,7 @@
         width: 100%;
         font-size: 3rem;
         text-align: center;
+        background-color: transparent;
       }
       > .sectionPara {
         font-size: 1.3rem;
@@ -88,6 +89,7 @@
         width: 100%;
         font-size: 3rem;
         text-align: center;
+        background-color: transparent;
       }
       > .sectionPara {
         font-size: 1.3rem;
@@ -221,6 +223,7 @@
         width: 100%;
         font-size: 3.2rem;
         text-align: center;
+        background-color: transparent;
       }
       > .sectionPara {
         font-size: 1.3rem;
@@ -242,6 +245,7 @@
         width: 100%;
         font-size: 3.2rem;
         text-align: center;
+        background-color: transparent;
       }
       > .sectionPara {
         font-size: 1.3rem;
