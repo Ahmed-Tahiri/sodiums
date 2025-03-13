@@ -20,9 +20,9 @@ export let Footer = () => {
                             <li className='footerNavLi'><Link to='/'>Home</Link></li>
                             <li className='footerNavLi'><Link to='/bonuses'>Bonuses</Link></li>
                             <li className='footerNavLi'><Link to='/leaderboard'>Leaderboards</Link></li>
-                            <li className='footerNavLi'><Link to='/leaderboard'>Store</Link></li>
-                            <li className='footerNavLi'><Link to='/leaderboard'>Cases</Link></li>
-                            <li className='footerNavLi'><Link to='/leaderboard'>Profile</Link></li>
+                            <li className='footerNavLi'><Link to='/store'>Store</Link></li>
+                            <li className='footerNavLi'><Link to='/cases'>Cases</Link></li>
+                            <li className='footerNavLi'><Link to='/profile'>Profile</Link></li>
                         </ul>
                     </nav>
 
