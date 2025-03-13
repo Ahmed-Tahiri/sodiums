@@ -6,6 +6,8 @@
   align-items: center;
   flex-direction: column;
   margin-top: 4rem;
+  position: relative;
+  z-index: 9999999;
   > .bonusTop {
     width: 100%;
     display: flex;
@@ -38,6 +40,257 @@
           font-size: 2.1rem;
           color: var(--white);
           background-color: var(--black);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bonusSection {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    > .bonusTop {
+      gap: 1rem;
+      > .bonusTextContent {
+        width: 100%;
+        gap: 7rem;
+        > .bonusHeading {
+          gap: 0.5rem;
+          > .sectionHeading {
+            width: 100%;
+            font-size: 3rem;
+          }
+          > .sectionPara {
+            font-size: 1.5rem;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    > .bonusBottom {
+      > .bonusCardsContainer {
+        > .bonusCard {
+          width: 80% !important;
+          & .gradient {
+            top: -25rem;
+          }
+          & .gradientRed {
+            top: -25rem;
+          }
+          & > .cardContent {
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            height: 100%;
+            width: 100%;
+            border: 2px solid transparent;
+            z-index: 9;
+            display: flex;
+            gap: 2rem;
+            > .imageCont {
+              height: 5rem;
+              > .bonusImage {
+                width: 13rem;
+              }
+            }
+
+            > .sponsorHeading {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              gap: 0.5rem;
+              margin-top: -2rem;
+              & .line {
+                position: relative;
+                width: 40%;
+                height: 1rem;
+                &::before {
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  content: "";
+                  height: 0.05rem;
+                  width: 100%;
+                  background-color: #fff;
+                  border-radius: 1rem;
+                }
+              }
+              > .sponsorName {
+                font-size: 1.3rem;
+                font-family: "Poppins", serif;
+              }
+            }
+            > .bonusPrizeContainer {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              > .bonusDepositContainer {
+                width: 100%;
+                background-color: var(--black);
+                border-bottom: 0.3rem solid var(--primary-blue);
+                padding: 0.3rem 2rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+              }
+              > .bonusCodeContainer {
+                width: 100%;
+                background-color: var(--black);
+                border-bottom: 0.3rem solid var(--light-golden);
+                padding: 0.3rem 2rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+              }
+              > .redBorder {
+                border-bottom: 0.3rem solid var(--red-border);
+              }
+              & span {
+                font-size: 0.7rem;
+              }
+              & p {
+                font-size: 1.3rem;
+              }
+            }
+            > .claimBtn {
+              margin-top: 1rem;
+              font-size: 1.3rem;
+              font-family: "Poppins", serif;
+              border-radius: 1rem;
+              padding: 1rem 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .bonusSection {
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    > .bonusTop {
+      gap: 1rem;
+      width: 100%;
+      > .bonusTextContent {
+        gap: 7rem;
+        > .bonusHeading {
+          gap: 0.6rem;
+          > .sectionHeading {
+            width: 100%;
+            font-size: 3.2rem;
+          }
+          > .sectionPara {
+            font-size: 1.5rem;
+            background-color: transparent;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    > .bonusBottom {
+      > .bonusCardsContainer {
+        > .bonusCard {
+          width: 70% !important;
+          & .gradient {
+            top: -25rem;
+          }
+          & .gradientRed {
+            top: -25rem;
+          }
+          & > .cardContent {
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            height: 100%;
+            width: 100%;
+            border: 2px solid transparent;
+            z-index: 9;
+            display: flex;
+            gap: 2rem;
+            > .imageCont {
+              height: 5rem;
+              > .bonusImage {
+                width: 13.5rem;
+              }
+            }
+
+            > .sponsorHeading {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              gap: 0.5rem;
+              margin-top: -2rem;
+              & .line {
+                position: relative;
+                width: 40%;
+                height: 1rem;
+                &::before {
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  content: "";
+                  height: 0.05rem;
+                  width: 100%;
+                  background-color: #fff;
+                  border-radius: 1rem;
+                }
+              }
+              > .sponsorName {
+                font-size: 1.35rem;
+                font-family: "Poppins", serif;
+              }
+            }
+            > .bonusPrizeContainer {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              > .bonusDepositContainer {
+                width: 100%;
+                background-color: var(--black);
+                border-bottom: 0.3rem solid var(--primary-blue);
+                padding: 0.3rem 2rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+              }
+              > .bonusCodeContainer {
+                width: 100%;
+                background-color: var(--black);
+                border-bottom: 0.3rem solid var(--light-golden);
+                padding: 0.3rem 2rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+              }
+              > .redBorder {
+                border-bottom: 0.3rem solid var(--red-border);
+              }
+              & span {
+                font-size: 0.7rem;
+              }
+              & p {
+                font-size: 1.4rem;
+              }
+            }
+            > .claimBtn {
+              margin-top: 1rem;
+              font-size: 1.5rem;
+              font-family: "Poppins", serif;
+              border-radius: 1rem;
+              padding: 1rem 3rem;
+            }
+          }
         }
       }
     }
