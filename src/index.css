@@ -1,5 +1,16 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-blue: #19c9f6;
+  --secondary-blue: #19caf660;
+  --powder-blue: #19caf634;
+  --white: #fff;
+  --black: #000;
+  --dim-grey: #9c9c9c;
+  --footerBg: #0f1417;
+  --footerGreyText: #616362;
+  --light-golden: #ffc043;
+  --red-border: #ff3535;
+  --input-BGC: #052932;
+  font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, serif, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,9 +22,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --primary-blue: #19c9f6;
-  --secondary-blue: #19caf657;
-  --white: #fff;
 }
 * {
   margin: 0;
