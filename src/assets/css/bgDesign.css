@@ -131,7 +131,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   #BgDesignContainer {
     min-height: 68rem;
     height: 68rem;
@@ -189,7 +189,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 998px) {
+@media screen and (min-width: 768px) and (max-width: 998px) {
   #BgDesignContainer {
     min-height: 68rem;
     height: 68rem;
@@ -272,7 +272,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (min-width: 999px) and (max-width: 1200px) {
+@media screen and (min-width: 998px) and (max-width: 1200px) {
   #BgDesignContainer {
     min-height: 68rem;
     height: 68rem;
@@ -355,7 +355,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
   #BgDesignContainer {
     min-height: 68rem;
     height: 68rem;

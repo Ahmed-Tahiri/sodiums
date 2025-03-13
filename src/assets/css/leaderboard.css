@@ -696,7 +696,7 @@
     }
   }
 }
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   .leaderboardSection {
     padding: 1rem 3rem;
     margin-top: 3rem;
@@ -991,7 +991,7 @@
     }
   }
 }
-@media screen and (min-width: 769px) and (max-width: 998px) {
+@media screen and (min-width: 768px) and (max-width: 998px) {
   .leaderboardSection {
     width: 100%;
     padding: 1rem 10rem;
@@ -1512,7 +1512,7 @@
     }
   }
 }
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
   .leaderboardSection {
     width: 100%;
     padding: 1rem 18rem;
