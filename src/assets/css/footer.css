@@ -240,3 +240,73 @@
     }
   }
 }
+@media screen and (min-width: 769px) and (max-width: 999px) {
+  .footer {
+    padding: 5rem 6rem;
+    gap: 3.3rem;
+    > .borderContainer {
+      height: 0.4rem;
+    }
+    > .footerTop {
+      > .footerCopyright {
+        margin-top: -2.5rem;
+        width: 20%;
+        gap: 2rem;
+        > img {
+          height: 5rem;
+        }
+        > .copyrightText {
+          font-size: 1.1rem;
+          font-family: "poppins", serif;
+          text-transform: uppercase;
+          color: var(--footerGreyText);
+          font-weight: 500;
+          line-height: 1.2rem;
+        }
+      }
+      > .footerLinksSection {
+        & .footerNavUl {
+          display: flex;
+          flex-direction: column;
+          gap: 1.7rem;
+          > .footerNavLi {
+            > a {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        & .socialLinks {
+          > .socialLink {
+            & a {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: start;
+              margin-top: -0.6rem;
+              text-decoration: none;
+              > img {
+                height: 3.5rem;
+              }
+              > span {
+                font-size: 1.2rem;
+              }
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .footerBottom {
+      width: 100%;
+      padding-bottom: 1rem;
+      > .infoMessage {
+        width: 82%;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
