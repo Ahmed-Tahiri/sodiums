@@ -166,3 +166,67 @@
     }
   }
 }
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .landingSection {
+    width: 100%;
+    padding: 1rem 3rem;
+    margin: 3rem 0 13rem;
+    > .weaponImageContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      z-index: 999999;
+      > .sniper {
+        position: absolute;
+        top: -4rem;
+        left: -6rem;
+        height: 14rem;
+      }
+      > .pistol {
+        position: absolute;
+        top: 12rem;
+        left: 4rem;
+        height: 7.5rem;
+      }
+      > .pistolSp {
+        position: absolute;
+        top: -2rem;
+        right: 7rem;
+        height: 10rem;
+      }
+      > .AR {
+        position: absolute;
+        height: 15rem;
+        top: 7rem;
+        right: -8rem;
+      }
+    }
+    > .landingMainContent {
+      margin-top: 3rem;
+      gap: 0.8rem;
+      width: 100%;
+      > .landingMainImg {
+        height: 18rem;
+      }
+      > .landingPara {
+        font-size: 1.1rem;
+        background-color: transparent;
+      }
+      > .landingBtns {
+        margin-top: 4rem;
+        gap: 1rem;
+        > button {
+          width: 27%;
+          padding: 0.7rem 1rem;
+          border-radius: 0.7rem;
+          > a {
+            font-size: 1.2rem;
+            letter-spacing: 0.03rem;
+          }
+        }
+      }
+    }
+  }
+}
