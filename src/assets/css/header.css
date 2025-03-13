@@ -73,11 +73,18 @@
 .active {
   color: var(--primary-blue) !important;
 }
-
+.none {
+  display: none;
+}
+.flex {
+  display: flex !important;
+}
 @media screen and (max-width: 576px) {
   .header {
     padding: 0.5rem 2rem;
     height: 6rem;
+    z-index: 999999999;
+    position: relative;
     > .navbar {
       width: 100%;
       display: flex;
@@ -89,6 +96,7 @@
         height: 5rem;
         width: 5rem;
         display: flex;
+        justify-content: center;
         > img {
           height: 4rem;
         }
@@ -121,10 +129,54 @@
     }
   }
 }
-
-.none {
-  display: none;
-}
-.flex {
-  display: flex !important;
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .header {
+    padding: 1rem 3rem;
+    height: 6rem;
+    z-index: 999999999;
+    position: relative;
+    > .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      > .logoSection {
+        height: 5.2rem;
+        width: 5.2rem;
+        display: flex;
+        justify-content: center;
+        > img {
+          height: 4.5rem;
+        }
+      }
+      & .hamBurgerBtn {
+        display: flex;
+        font-size: 3.3rem;
+      }
+      > .navUl {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--black);
+        padding: 2rem 0;
+        & .navLi {
+          list-style: none;
+          width: 100%;
+          text-align: center;
+          > a {
+            width: 100%;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
 }
