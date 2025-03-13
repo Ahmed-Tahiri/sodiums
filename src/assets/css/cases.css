@@ -132,3 +132,89 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .casesSection {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    > .casesTop {
+      gap: 1rem;
+      > .casesTextContent {
+        width: 100%;
+        gap: 7rem;
+        > .casesHeading {
+          gap: 0.5rem;
+          > .sectionHeading {
+            width: 100%;
+            font-size: 3rem;
+          }
+          > .sectionPara {
+            font-size: 1.5rem;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    > .casesBottom {
+      > .casesContainer {
+        gap: 3.5rem;
+        > .caseCard {
+          min-width: 90%;
+          width: 90%;
+          max-width: 95%;
+          min-height: 13rem;
+          height: 13rem;
+          justify-content: start;
+          align-items: center;
+          border-radius: 1rem;
+          padding: 0.5rem;
+          gap: 1rem;
+          > img {
+            width: 11rem;
+            height: 11rem;
+          }
+          > .caseTextContainer {
+            min-width: 60%;
+            width: 70%;
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: start;
+            gap: 0.9rem;
+            padding-right: 1.5rem;
+            > .caseHeading {
+              font-family: "Poppins", serif;
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+            > .casePrize {
+              display: flex;
+              flex-direction: row;
+              width: 100%;
+              gap: 0.7rem;
+              > p {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                > span {
+                  font-family: "Poppins", serif;
+                  font-size: 1.1rem;
+                  font-weight: 500;
+                }
+              }
+            }
+            > .caseBtn {
+              margin-top: 1.3rem;
+              font-size: 1.2rem;
+              font-weight: 500;
+              border-radius: 0.5rem;
+              padding: 0.4rem 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
