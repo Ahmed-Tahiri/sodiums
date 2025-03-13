@@ -7,6 +7,8 @@
   flex-direction: column;
   margin: 4rem 0 12rem;
   gap: 5rem;
+  z-index: 99999999;
+  position: relative;
   > .profileTop {
     width: 100%;
     display: flex;
@@ -187,6 +189,7 @@
                 background-color: var(--input-BGC);
               }
               > input {
+                color: white;
                 width: 100%;
                 background-color: var(--input-BGC);
                 border: 0.2rem solid var(--secondary-blue);
