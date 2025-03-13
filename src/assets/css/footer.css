@@ -117,3 +117,65 @@
 .none {
   display: none;
 }
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 3rem 2rem;
+    gap: 3rem;
+    > .borderContainer {
+      height: 0.2rem;
+    }
+    > .footerTop {
+      display: flex;
+      flex-direction: column-reverse;
+      > .footerCopyright {
+        margin-top: -1rem;
+        width: 100%;
+        gap: 0.5rem;
+        > img {
+          height: 3rem;
+        }
+        > .copyrightText {
+          font-size: 1rem;
+          line-height: 1.3rem;
+        }
+      }
+      > .footerLinksSection {
+        width: 100%;
+        & .footerNavUl {
+          gap: 1.5rem;
+          > .footerNavLi {
+            list-style: none;
+            > a {
+              font-size: 1.3rem;
+            }
+          }
+        }
+        & .socialLinks {
+          > .socialLink {
+            & a {
+              margin-top: -0.5rem;
+              > img {
+                height: 3.5rem;
+              }
+              > span {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .footerBottom {
+      > .infoMessage {
+        text-align: center;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: "poppins", serif;
+        color: var(--footerGreyText);
+        font-weight: 600;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
