@@ -1,6 +1,10 @@
-
-export let StoreCard = ({ productId, productName, productImage, productPrice, productQuantity }) => {
+import saleBadge from './../assets/images/saleShape.png';
+export let StoreCard = ({ productName, productImage, productPrice, productQuantity, display }) => {
     return <div className='storeCard'>
+        <div className={`saleBadge ${display}`}>
+            <img src={saleBadge} alt='Sale Badge' />
+            <span>Limited Offer</span>
+        </div>
         <div className='stockContainer'>
             <span className='stockText'>In Stock:</span>
             <span className='stockQua'>{productQuantity}</span>

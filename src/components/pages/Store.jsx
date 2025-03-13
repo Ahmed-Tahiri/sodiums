@@ -14,6 +14,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'none'
         },
         {
             productId: 'Prod2',
@@ -21,6 +22,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'flex'
         },
         {
             productId: 'Prod3',
@@ -28,6 +30,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'none'
         },
         {
             productId: 'Prod4',
@@ -35,6 +38,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'flex'
         },
         {
             productId: 'Prod5',
@@ -42,6 +46,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'none'
         },
         {
             productId: 'Prod6',
@@ -49,6 +54,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'flex'
         },
         {
             productId: 'Prod7',
@@ -56,6 +62,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'none'
         },
         {
             productId: 'Prod8',
@@ -63,6 +70,7 @@ export let Store = () => {
             productImage: storeSniper,
             productName: 'AWP | Gungnir (Factory New)',
             productPrice: '100,000',
+            display: 'flex'
         },
     ];
     return <>

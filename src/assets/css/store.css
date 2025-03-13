@@ -105,6 +105,7 @@
           padding: 0.2rem;
           border: 0.2rem solid var(--dim-grey);
           color: var(--dim-grey);
+          cursor: pointer;
         }
         > .sliderMessage {
           color: var(--dim-grey);
@@ -123,6 +124,7 @@
       flex-wrap: wrap;
       gap: 2rem;
       > .storeCard {
+        position: relative;
         background-color: var(--powder-blue);
         width: 20%;
         border-radius: 1rem;
@@ -132,7 +134,24 @@
         justify-content: center;
         padding: 1rem 1.5rem;
         border: 0.2rem solid var(--secondary-blue);
-
+        > .saleBadge {
+          width: 100%;
+          background-color: transparent;
+          position: absolute;
+          top: -1.5rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          > img {
+            width: 11rem;
+          }
+          > span {
+            position: absolute;
+            top: 0.6rem;
+            font-family: "poppins", serif;
+            font-size: 0.9rem;
+          }
+        }
         > .stockContainer {
           width: 100%;
           display: flex;
@@ -207,4 +226,10 @@
       }
     }
   }
+}
+.none {
+  display: none;
+}
+.flex {
+  display: flex;
 }
