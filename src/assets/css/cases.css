@@ -413,10 +413,10 @@
         > .casesHeading {
           gap: 0.8rem;
           > .sectionHeading {
-            font-size: 5.2rem;
+            font-size: 4.8rem;
           }
           > .sectionPara {
-            font-size: 2rem;
+            font-size: 1.9rem;
           }
         }
       }
@@ -516,10 +516,10 @@
         > .casesHeading {
           gap: 0.8rem;
           > .sectionHeading {
-            font-size: 5.2rem;
+            font-size: 4.9rem;
           }
           > .sectionPara {
-            font-size: 2rem;
+            font-size: 1.9rem;
           }
         }
       }

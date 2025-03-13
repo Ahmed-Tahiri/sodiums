@@ -445,12 +445,12 @@
           gap: 0.8rem;
           > .sectionHeading {
             width: 100%;
-            font-size: 5.2rem;
+            font-size: 4.8rem;
           }
           > .sectionPara {
             background-color: transparent;
             width: 100%;
-            font-size: 2rem;
+            font-size: 1.9rem;
             text-align: center;
           }
         }
@@ -571,10 +571,10 @@
         > .bonusHeading {
           gap: 0.8rem;
           > .sectionHeading {
-            font-size: 5.2rem;
+            font-size: 4.9rem;
           }
           > .sectionPara {
-            font-size: 2rem;
+            font-size: 1.9rem;
           }
         }
       }
