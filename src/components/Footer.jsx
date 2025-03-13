@@ -17,17 +17,17 @@ export let Footer = () => {
                 <div className='footerLinksSection'>
                     <nav className='footerNav'>
                         <ul className='footerNavUl'>
-                            <li className='footerNavLi'><a href='/'>Home</a></li>
-                            <li className='footerNavLi'><a href='/bonuses'>Bonuses</a></li>
-                            <li className='footerNavLi'><a href='/leaderboards'>Leaderboards</a></li>
+                            <li className='footerNavLi'><Link to='/'>Home</Link></li>
+                            <li className='footerNavLi'><Link to='/bonuses'>Bonuses</Link></li>
+                            <li className='footerNavLi'><Link to='/leaderboard'>Leaderboards</Link></li>
                         </ul>
                     </nav>
 
                     <ul className='socialLinks'>
-                        <li className='socialLink'><a><img src={discordLogo} alt='Discord Logo' /><span>Discord</span></a></li>
-                        <li className='socialLink'><a><img src={ytLogo} alt='Youtube Logo' /><span>Youtube</span></a></li>
-                        <li className='socialLink'><a><img src={kickLogo} alt='Kick Logo' /><span>Kick</span></a></li>
-                        <li className='socialLink'><a><img src={XLogo} alt='X Logo' /><span>X / Twitter</span></a></li>
+                        <li className='socialLink'><Link to='#'><img src={discordLogo} alt='Discord Logo' /><span>Discord</span></Link></li>
+                        <li className='socialLink'><Link to='#'><img src={ytLogo} alt='Youtube Logo' /><span>Youtube</span></Link></li>
+                        <li className='socialLink'><Link to='#'><img src={kickLogo} alt='Kick Logo' /><span>Kick</span></Link></li>
+                        <li className='socialLink'><Link to='#'><img src={XLogo} alt='X Logo' /><span>X / Twitter</span></Link></li>
                     </ul>
                 </div>
             </div>

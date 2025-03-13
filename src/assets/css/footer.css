@@ -87,6 +87,7 @@
             align-items: center;
             justify-content: start;
             margin-top: -0.5rem;
+            text-decoration: none;
             > img {
               height: 4rem;
             }
