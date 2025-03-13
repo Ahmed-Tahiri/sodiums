@@ -7,6 +7,8 @@
   flex-direction: column;
   margin: 4rem 0 12rem;
   gap: 5rem;
+  position: relative;
+  z-index: 999999;
   > .storeTop {
     width: 100%;
     display: flex;
@@ -232,4 +234,139 @@
 }
 .flex {
   display: flex;
+}
+
+@media screen and (max-width: 576px) {
+  .storeSection {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 3rem 0 12rem;
+    gap: 5rem;
+    > .storeTop {
+      gap: 1rem;
+      > .storeTextContent {
+        width: 100%;
+        gap: 7rem;
+        > .storeHeading {
+          gap: 0.5rem;
+          > .sectionHeading {
+            width: 100%;
+            font-size: 3rem;
+          }
+          > .sectionPara {
+            font-size: 1.5rem;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    > .storeBottom {
+      width: 100%;
+      gap: 5rem;
+      .storePreferences {
+        width: 100%;
+        gap: 2rem;
+        padding: 0 3rem;
+        > .searchBox {
+          border-radius: 0.7rem;
+          padding: 0.5rem 1rem;
+          > input {
+            width: 90%;
+            font-size: 1.3rem;
+            color: var(--white);
+          }
+          > span {
+            width: 10%;
+            font-size: 1.8rem;
+          }
+        }
+        > .filterContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+          width: 100%;
+          gap: 0.5rem;
+          > .filterBtn {
+            height: 2.6rem;
+            width: 2.6rem;
+            background-color: var(--powder-blue);
+            border: none;
+            font-size: 2.5rem;
+            border-radius: 0.5rem;
+            border: 0.2rem solid var(--dim-grey);
+          }
+          > .sliderMessage {
+            color: var(--dim-grey);
+            font-family: "Poppins", serif;
+            font-size: 1.4rem;
+            background-color: transparent;
+          }
+        }
+      }
+      > .storeCardsContainer {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        > .storeCard {
+          width: 70%;
+          padding: 1rem 1.5rem;
+          > .saleBadge {
+            width: 100%;
+            background-color: transparent;
+            position: absolute;
+            top: -1.5rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            > img {
+              width: 11rem;
+            }
+            > span {
+              position: absolute;
+              top: 0.6rem;
+              font-family: "poppins", serif;
+              font-size: 0.9rem;
+            }
+          }
+          > .stockContainer {
+            width: 100%;
+            gap: 0.4rem;
+            > .stockText {
+              font-family: "Poppins", serif;
+              font-size: 1.2rem;
+            }
+            > .stockQua {
+              font-size: 1.1rem;
+              height: 2.2rem;
+              width: 2.2rem;
+            }
+          }
+          > .storeItemImg {
+            width: 95%;
+          }
+          > .itemDetails {
+            width: 100%;
+            margin-top: 0.5rem;
+            > .itemText {
+              font-size: 1rem;
+            }
+            > .itemName {
+              font-size: 1.3rem;
+              margin-top: 0.3rem;
+            }
+          }
+          > .purchaseBtn {
+            margin: 2.5rem 0 1rem;
+            padding: 0.7rem 1rem;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
 }
