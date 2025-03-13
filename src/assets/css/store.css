@@ -370,3 +370,129 @@
     }
   }
 }
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .storeSection {
+    width: 100%;
+    padding: 1rem 3rem;
+    margin: 3rem 0 12rem;
+    gap: 5rem;
+    > .storeTop {
+      gap: 1rem;
+      > .storeTextContent {
+        width: 100%;
+        gap: 7rem;
+        > .storeHeading {
+          gap: 0.6rem;
+          > .sectionHeading {
+            width: 100%;
+            font-size: 3.2rem;
+          }
+          > .sectionPara {
+            font-size: 1.5rem;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    > .storeBottom {
+      width: 100%;
+      gap: 5rem;
+      .storePreferences {
+        width: 70%;
+        gap: 2rem;
+        padding: 0 3rem;
+        > .searchBox {
+          border-radius: 0.7rem;
+          padding: 0.5rem 1rem;
+          > input {
+            width: 90%;
+            font-size: 1.3rem;
+            color: var(--white);
+          }
+          > span {
+            width: 10%;
+            font-size: 1.8rem;
+          }
+        }
+        > .filterContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+          width: 100%;
+          gap: 0.5rem;
+          > .filterBtn {
+            height: 2.8rem;
+            width: 2.8rem;
+            border: none;
+            font-size: 2.5rem;
+            border-radius: 0.5rem;
+            border: 0.2rem solid var(--dim-grey);
+          }
+          > .sliderMessage {
+            font-size: 1.5rem;
+            background-color: transparent;
+          }
+        }
+      }
+      > .storeCardsContainer {
+        width: 100%;
+        gap: 3rem;
+        > .storeCard {
+          width: 60%;
+          padding: 1rem 1.5rem;
+          > .saleBadge {
+            width: 100%;
+            background-color: transparent;
+            position: absolute;
+            top: -1.8rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            > img {
+              width: 15rem;
+            }
+            > span {
+              position: absolute;
+              top: 1rem;
+              font-family: "poppins", serif;
+              font-size: 1.1rem;
+            }
+          }
+          > .stockContainer {
+            width: 100%;
+            gap: 0.4rem;
+            > .stockText {
+              font-family: "Poppins", serif;
+              font-size: 1.3rem;
+            }
+            > .stockQua {
+              font-size: 1.2rem;
+              height: 2.4rem;
+              width: 2.4rem;
+            }
+          }
+          > .storeItemImg {
+            width: 95%;
+          }
+          > .itemDetails {
+            width: 100%;
+            margin-top: 0.5rem;
+            > .itemText {
+              font-size: 1.1rem;
+            }
+            > .itemName {
+              font-size: 1.4rem;
+              margin-top: 0.3rem;
+            }
+          }
+          > .purchaseBtn {
+            margin: 2.5rem 0 1rem;
+            padding: 0.7rem 1rem;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
