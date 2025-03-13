@@ -717,7 +717,125 @@
             }
           }
           > .storeItemImg {
-            width: 95%;
+            width: 90%;
+          }
+          > .itemDetails {
+            width: 100%;
+            margin-top: 0.5rem;
+            > .itemText {
+              font-size: 1rem;
+            }
+            > .itemName {
+              font-size: 1.3rem;
+              margin-top: 0.3rem;
+            }
+          }
+          > .purchaseBtn {
+            margin: 2.5rem 0 1rem;
+            padding: 0.7rem 1rem;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .storeSection {
+    width: 100%;
+    padding: 1rem 18rem;
+    margin: 4.5rem 0 12rem;
+    gap: 5rem;
+    > .storeTop {
+      width: 100%;
+      gap: 1rem;
+      > .storeTextContent {
+        gap: 6rem;
+        > .storeHeading {
+          gap: 0.8rem;
+          > .sectionHeading {
+            font-size: 4.9rem;
+          }
+          > .sectionPara {
+            font-size: 1.9rem;
+          }
+        }
+      }
+    }
+    > .storeBottom {
+      width: 100%;
+      gap: 5rem;
+      .storePreferences {
+        width: 100%;
+        gap: 2rem;
+        padding: 0 3rem;
+        > .searchBox {
+          border-radius: 0.9rem;
+          padding: 0.5rem 1.5rem;
+          > input {
+            width: 97%;
+            font-size: 1.5rem;
+            color: var(--white);
+          }
+          > span {
+            width: 3%;
+            font-size: 1.7rem;
+          }
+        }
+        > .filterContainer {
+          width: 100%;
+          gap: 0.5rem;
+          > .filterBtn {
+            height: 2.9rem;
+            width: 2.9rem;
+            border: none;
+            font-size: 2.5rem;
+            border-radius: 0.5rem;
+            border: 0.2rem solid var(--dim-grey);
+          }
+          > .sliderMessage {
+            font-size: 1.7rem;
+            background-color: transparent;
+          }
+        }
+      }
+      > .storeCardsContainer {
+        width: 100%;
+        gap: 3rem;
+        > .storeCard {
+          position: relative;
+          width: 22%;
+          > .saleBadge {
+            width: 100%;
+            background-color: transparent;
+            position: absolute;
+            top: -1.5rem;
+            > img {
+              width: 11rem;
+            }
+            > span {
+              position: absolute;
+              top: 0.6rem;
+              font-family: "poppins", serif;
+              font-size: 0.8rem;
+            }
+          }
+          > .stockContainer {
+            gap: 0.4rem;
+            > .stockText {
+              font-family: "Poppins", serif;
+              font-size: 1.4rem;
+              color: var(--dim-grey);
+              font-weight: 600;
+            }
+            > .stockQua {
+              font-size: 1.3rem;
+              height: 2.8rem;
+              width: 2.8rem;
+            }
+          }
+          > .storeItemImg {
+            width: 90%;
           }
           > .itemDetails {
             width: 100%;
