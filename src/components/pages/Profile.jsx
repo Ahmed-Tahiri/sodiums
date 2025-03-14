@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { BgDesign } from "../bgDesign";
 import { Footer } from "../Footer";
 import { Navbar } from "../navbar";
@@ -8,6 +8,10 @@ import babyBoss from './../../assets/images/babyBoss.png';
 import { InventoryCard } from "../InventoryCard";
 import { ProfileForm } from "../ProfileForm";
 export let Profile = () => {
+
+    useEffect(() => {
+        document.title = 'Sodium | Profile';
+    }, []);
     let inventoryData = [
         {
             productName: 'Karambit | Slaughter',

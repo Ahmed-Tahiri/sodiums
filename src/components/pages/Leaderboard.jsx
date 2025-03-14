@@ -9,8 +9,12 @@ import RAINGG from '../../assets/images/RAINGG.svg'
 import CLASHGG from "../../assets/images/CLASH.svg";
 import gem from './../../assets/images/gem.webm';
 import babyBoss from './../../assets/images/babyBoss.png';
+import { useEffect } from 'react';
 export let Leaderboard = () => {
 
+    useEffect(() => {
+        document.title = 'Sodium | Leaderboard';
+    }, []);
     let profiles = [
         { 'number': '#4' },
         { 'number': '#5' },

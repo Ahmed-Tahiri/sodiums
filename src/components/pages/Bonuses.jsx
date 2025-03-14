@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Navbar } from "../navbar";
 import { BgDesign } from "../bgDesign";
 import { Footer } from '../Footer';
@@ -5,6 +6,9 @@ import { BonusCards } from "../BonusCards";
 import './../../assets/css/bonuses.css';
 import './../../assets/css/bonusCards.css';
 export let Bonuses = () => {
+    useEffect(() => {
+        document.title = 'Sodium | Bonuses'
+    }, []);
     return <>
         <BgDesign />
         <Navbar />

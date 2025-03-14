@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './../../assets/css/store.css';
 import { BgDesign } from "../bgDesign";
 import { Footer } from "../Footer";
@@ -6,7 +7,11 @@ import { LiaSlidersHSolid } from "react-icons/lia";
 import { LuSearch } from "react-icons/lu";
 import storeSniper from './../../assets/images/storeSniper.png';
 import { StoreCard } from '../storeCard';
+
 export let Store = () => {
+    useEffect(() => {
+        document.title = 'Sodium | Store';
+    }, []);
     let storeData = [
         {
             productId: 'Prod1',

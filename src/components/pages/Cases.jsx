@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './../../assets/css/cases.css';
 import CaseImg from './../../assets/images/case.png';
 import { BgDesign } from "../bgDesign"
@@ -7,6 +8,9 @@ import { CaseCard } from '../CaseCard';
 
 
 export let Cases = () => {
+    useEffect(() => {
+        document.title = 'Sodium | Cases'
+    }, []);
     let casesData = [
         {
             caseId: 'Case1',
