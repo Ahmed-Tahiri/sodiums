@@ -822,3 +822,129 @@
     }
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .profileSection {
+    width: 100%;
+    padding: 1rem 18rem;
+    margin: 4rem 0 12rem;
+    > .profileTop {
+      gap: 0.8rem;
+      > .profileTextContent {
+        gap: 7rem;
+        > .profileHeading {
+          gap: 1rem;
+          > .sectionHeading {
+            font-size: 4.9rem;
+          }
+        }
+      }
+    }
+    > .profileBottom {
+      > .profileContent {
+        gap: 2rem;
+        > .ProfileDisplay {
+          width: 40%;
+          padding: 1.8rem;
+          gap: 2rem;
+          > .profilePicture {
+            border-radius: 50%;
+            height: 18rem;
+            width: 18rem;
+          }
+          > .profileTextContent {
+            gap: 2.8rem;
+            > .profileHeading {
+              font-size: 1.9rem;
+            }
+            > .profileInfoSection {
+              margin-top: 0.2rem;
+              gap: 1rem;
+              > .profileData {
+                > span {
+                  font-size: 1.35rem;
+                }
+              }
+            }
+            > .progressDetail {
+              gap: 0.5rem;
+              padding-bottom: 2rem;
+              > .progressHeading {
+                font-size: 1.45rem;
+              }
+              .progress-container {
+                height: 2.5rem;
+              }
+              .progress-text {
+                font-size: 1.45rem;
+                line-height: 2.5rem;
+              }
+            }
+          }
+        }
+        > .ProfileDetails {
+          width: 45%;
+          gap: 2rem;
+          > .idsSection {
+            height: 44rem;
+            min-height: 44rem;
+
+            > .idsForm {
+              gap: 0.9rem;
+              > .inputContainer {
+                gap: 0.35rem;
+                > label {
+                  font-size: 1.45rem;
+                }
+                > input {
+                  padding: 0.7rem 1rem;
+                  font-size: 1.25rem;
+                }
+              }
+              > .idFormBtn {
+                padding: 0.8rem 1rem;
+                font-size: 1.4rem;
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          > .inventorySection {
+            padding: 1.3rem 2rem 7rem;
+            gap: 2rem;
+            > .sectionHeading {
+              font-size: 2.1rem;
+            }
+            > .inventoryCardsContainer {
+              gap: 0.8rem;
+              > .inventoryCard {
+                gap: 1rem;
+                width: 31%;
+                > .productDetails {
+                  border-radius: 1rem;
+                  > .productName {
+                    font-size: 0.9rem;
+                  }
+                  > .productPrice {
+                    font-size: 1.25rem;
+                  }
+                  > .productImg {
+                    width: 95%;
+                  }
+                }
+                > .requestBtn {
+                  padding: 0.3rem 1rem;
+                  font-size: 1.25rem;
+                  background-color: var(--primary-blue);
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
