@@ -2,7 +2,6 @@ import CSGOBIG from './../assets/images/CSGOBIG.png';
 import RallLogo from './../assets/images/RALLLogo.png'
 export let BonusCards = () => {
     return (<>
-
         <div className="bonusCard">
             <div className="gradient"></div>
             <div className="color"></div>

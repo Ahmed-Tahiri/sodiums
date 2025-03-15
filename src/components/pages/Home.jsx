@@ -6,6 +6,7 @@ import { Footer } from "../Footer"
 import { Landing } from "../Landing"
 import { BonusSection } from "../BonusSection"
 import { HomeLeaderboard } from '../HomeLeaderboard';
+
 export let Home = () => {
     useEffect(() => {
         document.title = 'Sodium | Home'
@@ -15,8 +16,9 @@ export let Home = () => {
         <Navbar />
         <main className="main">
             <Landing />
-            <BonusSection />
-            <HomeLeaderboard />
+            <div data-aos="fade-up-right"><BonusSection /></div>
+            <div data-aos="fade-up-left">  <HomeLeaderboard /></div>
+
         </main>
         <Footer />
     </>
