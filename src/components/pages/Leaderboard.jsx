@@ -36,9 +36,9 @@ export let Leaderboard = () => {
                             <p className="sectionPara">Complete in Wager Races and win huge Prizes!</p>
                         </div>
                         <div className="leaderboardPartners">
-                            <p className="leaderBoardTag clashLogo"><video src={gem} loop muted playsInline autoPlay /><img src={CLASHGG} /></p>
-                            <p className="leaderBoardTag  csgoLogo"><img src={CSGOLogo} alt="CSGO-BIG Logo" /></p>
-                            <p className="leaderBoardTag rainggLogo"><img src={RAINGG} /></p>
+                            <button type='button' className="leaderBoardTag clashLogo"><video src={gem} loop muted playsInline autoPlay /><img src={CLASHGG} /></button>
+                            <button type='button' className="leaderBoardTag  csgoLogo"><img src={CSGOLogo} alt="CSGO-BIG Logo" /></button>
+                            <button type='button' className="leaderBoardTag rainggLogo"><img src={RAINGG} /></button>
                         </div>
                     </div>
                     <LeaderBoardCards />

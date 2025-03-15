@@ -90,11 +90,27 @@
           > a {
             color: var(--white);
           }
+          &:hover {
+            background-color: transparent;
+            cursor: pointer;
+            box-shadow: inset 0 0 0 4px var(--primary-blue);
+            > a {
+              color: var(--primary-blue);
+            }
+          }
         }
         &:last-child {
           background-color: var(--white);
           > a {
             color: var(--black);
+          }
+          &:hover {
+            background-color: transparent;
+            cursor: pointer;
+            box-shadow: inset 0 0 0 4px var(--white);
+            > a {
+              color: var(--white);
+            }
           }
         }
       }

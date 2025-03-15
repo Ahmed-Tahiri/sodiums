@@ -20,6 +20,10 @@
       align-items: center;
       border-radius: 1.5rem;
       overflow: hidden;
+      &:hover {
+        transition: all 0.2s linear;
+        transform: scale(1.05);
+      }
       & .gradientRed {
         border-radius: 1.5rem;
         height: 100%;

@@ -60,6 +60,12 @@
           align-items: center;
           padding: 1rem 2rem;
           border-radius: 20rem;
+          border: none;
+          &:hover {
+            cursor: pointer;
+            transition: all 0.2s linear;
+            transform: scale(1.1);
+          }
         }
         > .clashLogo {
           display: flex;
@@ -141,6 +147,11 @@
         justify-content: space-between;
         border-radius: 1.6rem;
         padding: 1rem 2.5rem;
+        &:hover {
+          cursor: pointer;
+          transition: all 0.2s linear;
+          transform: scale(1.05);
+        }
         > .playerData {
           margin-right: 4rem;
           width: 55%;
@@ -360,6 +371,11 @@
           padding: 0.2rem 0;
         }
       }
+    }
+    &:hover {
+      cursor: pointer;
+      transition: all 0.2s linear;
+      transform: scale(1.1);
     }
   }
 }
