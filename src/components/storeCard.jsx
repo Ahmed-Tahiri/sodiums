@@ -1,6 +1,6 @@
 import saleBadge from './../assets/images/saleShape.png';
 export let StoreCard = ({ productName, productImage, productPrice, productQuantity, display }) => {
-    return <div className='storeCard' data-aos="fade-up">
+    return <div className='storeCard' data-aos='zoom-in-up'>
         <div className={`saleBadge ${display}`}>
             <img src={saleBadge} alt='Sale Badge' />
             <span>Limited Offer</span>

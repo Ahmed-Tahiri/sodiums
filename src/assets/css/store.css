@@ -9,6 +9,7 @@
   gap: 5rem;
   position: relative;
   z-index: 999999;
+  overflow: hidden;
   > .storeTop {
     width: 100%;
     display: flex;

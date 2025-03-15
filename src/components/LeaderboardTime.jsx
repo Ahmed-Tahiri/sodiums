@@ -1,5 +1,5 @@
 export let LeaderboardTime = () => {
-    return <div className="leaderboardEndTime">
+    return <div className="leaderboardEndTime" data-aos='zoom-in'>
         <p className="leaderboardEndText">Leaderboard Ends in:</p>
         <div className="leaderboardTime">
             <p className="timeCircle">

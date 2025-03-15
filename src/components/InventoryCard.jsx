@@ -1,7 +1,7 @@
 
 export let InventoryCard = ({ productName, productPrice, productId, productImg }) => {
     return (
-        <div className="inventoryCard" data-aos='zoom-in-up'>
+        <div className="inventoryCard" data-aos='fade-in'>
             <div className="productDetails">
                 <p className="productName">{productName}</p>
                 <p className="productPrice">{productPrice}</p>

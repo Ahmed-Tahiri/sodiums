@@ -2,7 +2,7 @@ import CSGOBIG from './../assets/images/CSGOBIG.png';
 import RallLogo from './../assets/images/RALLLogo.png'
 export let BonusCards = () => {
     return (<>
-        <div data-aos="zoom-in-right" className="bonusCard">
+        <div className="bonusCard" data-aos='zoom-in-right'>
             <div className="gradient"></div>
             <div className="color"></div>
             <div className="cardContent">
@@ -27,7 +27,7 @@ export let BonusCards = () => {
                 <button type="button" className="claimBtn">Claim Bonus</button>
             </div>
         </div>
-        <div data-aos="zoom-in" className="bonusCard">
+        <div className="bonusCard" data-aos='zoom-in'>
             <div className="gradientRed"></div>
             <div className="color"></div>
             <div className="cardContent">
@@ -52,7 +52,7 @@ export let BonusCards = () => {
                 <button type="button" className="claimBtn">Claim Bonus</button>
             </div>
         </div>
-        <div data-aos="zoom-in-left" className="bonusCard">
+        <div className="bonusCard" data-aos='zoom-in-left'>
             <div className="gradient"></div>
             <div className="color"></div>
             <div className="cardContent">

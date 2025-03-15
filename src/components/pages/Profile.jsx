@@ -41,7 +41,7 @@ export let Profile = () => {
                 <div className="profileTop">
                     <div className="profileTextContent">
                         <div className="profileHeading">
-                            <h2 className="sectionHeading">Profile</h2>
+                            <h2 className="sectionHeading" data-aos='zoom-in-right'>Profile</h2>
                         </div>
                     </div>
                 </div>

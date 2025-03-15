@@ -1,4 +1,5 @@
 .footer {
+  overflow: hidden;
   background-color: var(--footerBg);
   width: 100%;
   display: flex;

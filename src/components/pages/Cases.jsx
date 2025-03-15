@@ -45,14 +45,14 @@ export let Cases = () => {
                 <div className="casesTop">
                     <div className="casesTextContent">
                         <div className="casesHeading">
-                            <h2 className="sectionHeading">Cases</h2>
-                            <p className="sectionPara">Open Case to win Rewards!</p>
+                            <h2 className="sectionHeading" data-aos='zoom-in-right'>Cases</h2>
+                            <p className="sectionPara" data-aos='zoom-in-left'>Open Case to win Rewards!</p>
                         </div>
                     </div>
                 </div>
                 <div className="casesBottom">
                     <div className='casesContainer'>
-                        {casesData.map((singleCase, index) => <CaseCard {...singleCase} />)}
+                        {casesData.map((singleCase, index) => <CaseCard {...singleCase} key={singleCase.caseId} />)}
                     </div>
                 </div>
             </section>

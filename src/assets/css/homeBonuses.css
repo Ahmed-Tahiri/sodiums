@@ -1,4 +1,5 @@
 .bonusSection {
+  overflow: hidden;
   width: 100%;
   padding: 1rem 22rem;
   display: flex;

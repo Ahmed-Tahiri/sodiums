@@ -1,5 +1,5 @@
 export let CaseCard = ({ caseId, caseImg, MaxPrize, MinPrize, extraClass, caseName }) => {
-    return <div className={`caseCard ${extraClass}`} data-aos='zoom-in-up'>
+    return <div className={`caseCard ${extraClass}`} data-aos='zoom-in-right'>
         <img src={caseImg} alt='Case Picture' />
         <div className='caseTextContainer'>
             <h4 className='caseHeading'>{caseName}</h4>

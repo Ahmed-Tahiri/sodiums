@@ -85,18 +85,18 @@ export let Store = () => {
             <div className="storeTop">
                 <div className="storeTextContent">
                     <div className="storeHeading">
-                        <h2 className="sectionHeading">Store</h2>
-                        <h2 className="sectionPara">Buy Rewards & more with your Points</h2>
+                        <h2 className="sectionHeading" data-aos='zoom-in-right'>Store</h2>
+                        <h2 className="sectionPara" data-aos='zoom-in-left'>Buy Rewards & more with your Points</h2>
                     </div>
                 </div>
             </div>
             <div className="storeBottom">
                 <div className='storePreferences'>
-                    <div className='searchBox'>
+                    <div className='searchBox' data-aos='zoom-in'>
                         <span><LuSearch /></span>
                         <input type='text' placeholder='Search' autoComplete='off' name='search' id='search' />
                     </div>
-                    <div className='filterContainer'>
+                    <div className='filterContainer' data-aos='zoom-in'>
                         <button type='button' className='filterBtn'><LiaSlidersHSolid /></button>
                         <p className='sliderMessage'>From High to Low</p>
                     </div>

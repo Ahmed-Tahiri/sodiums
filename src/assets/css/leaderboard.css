@@ -8,6 +8,7 @@
   margin-top: 4rem;
   position: relative;
   z-index: 9999999;
+  overflow: hidden;
   > .leaderboardTop {
     width: 100%;
     display: flex;

@@ -16,8 +16,8 @@ export let Bonuses = () => {
             <div className="bonusTop">
                 <div className="bonusTextContent">
                     <div className="bonusHeading">
-                        <h2 className="sectionHeading">Bonuses</h2>
-                        <p className="sectionPara">Claim exclusive Offers with Code "Sodiums"</p>
+                        <h2 className="sectionHeading" data-aos='zoom-in-right'>Bonuses</h2>
+                        <p className="sectionPara" data-aos='zoom-in-left'>Claim exclusive Offers with Code "Sodiums"</p>
                     </div>
                 </div>
             </div>

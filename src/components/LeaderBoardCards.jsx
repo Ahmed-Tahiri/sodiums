@@ -1,7 +1,7 @@
 import babyBoss from './../assets/images/babyBoss.png';
 export let LeaderBoardCards = () => {
     return <div className="leaderboardTextCards">
-        <div className="leaderboardCard" data-aos="zoom-in-left">
+        <div className="leaderboardCard" data-aos='zoom-in-right'>
             <div className="cardTop">
                 <div className="cardImageContainer">
                     <img src={babyBoss} alt="Baby Boss Picture" />
@@ -22,7 +22,7 @@ export let LeaderBoardCards = () => {
                 </div>
             </div>
         </div>
-        <div className="leaderboardCard slideTop" data-aos="zoom-in-up">
+        <div className="leaderboardCard slideTop" data-aos='zoom-in'>
             <div className="cardTop">
                 <div className="cardImageContainer">
                     <img src={babyBoss} alt="Baby Boss Picture" />
@@ -43,7 +43,7 @@ export let LeaderBoardCards = () => {
                 </div>
             </div>
         </div>
-        <div className="leaderboardCard" data-aos="zoom-in-right">
+        <div className="leaderboardCard" data-aos='zoom-in-left'>
             <div className="cardTop">
                 <div className="cardImageContainer">
                     <img src={babyBoss} alt="Baby Boss Picture" />

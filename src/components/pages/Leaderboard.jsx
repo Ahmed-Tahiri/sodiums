@@ -32,20 +32,20 @@ export let Leaderboard = () => {
                 <div className="leaderboardTop">
                     <div className="leaderboardTextContent">
                         <div className="leaderboardHeading">
-                            <h2 className="sectionHeading">Leaderboard</h2>
-                            <p className="sectionPara">Complete in Wager Races and win huge Prizes!</p>
+                            <h2 className="sectionHeading" data-aos='zoom-in-right'>Leaderboard</h2>
+                            <p className="sectionPara" data-aos='zoom-in-left'>Complete in Wager Races and win huge Prizes!</p>
                         </div>
                         <div className="leaderboardPartners">
-                            <button type='button' className="leaderBoardTag clashLogo"><video src={gem} loop muted playsInline autoPlay /><img src={CLASHGG} /></button>
-                            <button type='button' className="leaderBoardTag  csgoLogo"><img src={CSGOLogo} alt="CSGO-BIG Logo" /></button>
-                            <button type='button' className="leaderBoardTag rainggLogo"><img src={RAINGG} /></button>
+                            <button data-aos='zoom-in-right' type='button' className="leaderBoardTag clashLogo"><video src={gem} loop muted playsInline autoPlay /><img src={CLASHGG} /></button>
+                            <button data-aos='zoom-in' type='button' className="leaderBoardTag  csgoLogo"><img src={CSGOLogo} alt="CSGO-BIG Logo" /></button>
+                            <button data-aos='zoom-in-left' type='button' className="leaderBoardTag rainggLogo"><img src={RAINGG} /></button>
                         </div>
                     </div>
                     <LeaderBoardCards />
                     <LeaderboardTime />
                 </div>
                 <div className="leaderboardBottom">
-                    <div className="leaderboardHeading" data-aos="zoom-in-up">
+                    <div className="leaderboardHeading" data-aos='zoom-in'>
                         <p className="playerNumber subHeading">#</p>
                         <p className="playerUsername subHeading">Username</p>
                         <div className="wegRew">  <p className="wagered subHeading">Wagered</p>
@@ -54,7 +54,7 @@ export let Leaderboard = () => {
                     </div>
                     <div className="leaderBoardProfilesContainer">
                         {
-                            profiles.map((prof) => <div data-aos="zoom-in-up" className="leaderboardProfile" key={`profile${prof.number}`}>
+                            profiles.map((prof) => <div className="leaderboardProfile" key={`profile${prof.number}`} data-aos='zoom-in'>
                                 <p className="playerNumber"><span>{prof.number}</span></p>
                                 <div className="playerData">
                                     <img src={babyBoss} alt="Player Profile Picture" />
