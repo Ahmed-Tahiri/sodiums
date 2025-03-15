@@ -14,10 +14,10 @@ export let Navbar = () => {
         <>
             <header className="header">
                 <nav className="navbar">
-                    <div className="logoSection">
+                    <div className="logoSection" data-aos='zoom-in-right'>
                         <img src={sodiumLogo} alt="sodium Logo" />
                     </div>
-                    <ul className={`navUl ${isOpen ? 'flex' : 'none'}`}>
+                    <ul className={`navUl ${isOpen ? 'flex' : 'none'}`} data-aos='zoom-in-left'>
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/' className={path === '/' ? 'active' : ''}>Home</Link></li>
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/bonuses' className={path === '/bonuses' ? 'active' : ''} href='#'>Bonuses</Link></li>
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/leaderboard' className={path === '/leaderboard' ? 'active' : ''}>Leaderboards</Link></li>
@@ -25,7 +25,7 @@ export let Navbar = () => {
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/cases' className={path === '/cases' ? 'active' : ''}>Cases</Link></li>
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/profile' className={path === '/profile' ? 'active' : ''}>Profile</Link></li>
                     </ul>
-                    <button onClick={hamburgerHandler} type='Btn' className='hamBurgerBtn'><GiHamburgerMenu /></button>
+                    <button onClick={hamburgerHandler} type='Btn' className='hamBurgerBtn' data-aos='zoom-in-left'><GiHamburgerMenu /></button>
                 </nav>
             </header>
         </>

@@ -47,7 +47,7 @@ export let Profile = () => {
                 </div>
                 <div className="profileBottom">
                     <div className="profileContent">
-                        <div className="ProfileDisplay">
+                        <div className="ProfileDisplay" data-aos='zoom-in-right'>
                             <img className="profilePicture" alt="Profile Picture" src={babyBoss} />
                             <span className="divider"></span>
                             <div className="profileTextContent">
@@ -79,11 +79,11 @@ export let Profile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="ProfileDetails">
+                        <div className="ProfileDetails" data-aos='zoom-in-left'>
                             <div className="idsSection">
                                 <ProfileForm />
                             </div>
-                            <div className="inventorySection">
+                            <div className="inventorySection" data-aos='zoom-in-up'>
                                 <h2 className="sectionHeading">My Inventory</h2>
                                 <div className="inventoryCardsContainer">
                                     {inventoryData.map((inventoryCard, index) => <InventoryCard {...inventoryCard} key={inventoryCard.productId} />)}

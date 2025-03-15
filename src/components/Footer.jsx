@@ -10,27 +10,27 @@ export let Footer = () => {
     return (
         <footer className="footer">
             <div className='footerTop'>
-                <div className="footerCopyright">
+                <div className="footerCopyright" data-aos='zoom-in-right'>
                     <img src={sodiumsFullLogo} alt='sodiums Logo' />
                     <p className='copyrightText'>Copyright 2025<br />Sodiums.GG</p>
                 </div>
                 <div className='footerLinksSection'>
                     <nav className='footerNav'>
                         <ul className='footerNavUl'>
-                            <li className='footerNavLi'><Link to='/'>Home</Link></li>
-                            <li className='footerNavLi'><Link to='/bonuses'>Bonuses</Link></li>
-                            <li className='footerNavLi'><Link to='/leaderboard'>Leaderboards</Link></li>
-                            <li className='footerNavLi'><Link to='/store'>Store</Link></li>
-                            <li className='footerNavLi'><Link to='/cases'>Cases</Link></li>
-                            <li className='footerNavLi'><Link to='/profile'>Profile</Link></li>
+                            <li data-aos='zoom-in-right' className='footerNavLi'><Link to='/'>Home</Link></li>
+                            <li data-aos='zoom-in-right' className='footerNavLi'><Link to='/bonuses'>Bonuses</Link></li>
+                            <li data-aos='zoom-in-right' className='footerNavLi'><Link to='/leaderboard'>Leaderboards</Link></li>
+                            <li data-aos='zoom-in-right' className='footerNavLi'><Link to='/store'>Store</Link></li>
+                            <li data-aos='zoom-in-right' className='footerNavLi'><Link to='/cases'>Cases</Link></li>
+                            <li data-aos='zoom-in-right' className='footerNavLi'><Link to='/profile'>Profile</Link></li>
                         </ul>
                     </nav>
 
                     <ul className='socialLinks'>
-                        <li className='socialLink'><Link to='#'><img src={discordLogo} alt='Discord Logo' /><span>Discord</span></Link></li>
-                        <li className='socialLink'><Link to='#'><img src={ytLogo} alt='Youtube Logo' /><span>Youtube</span></Link></li>
-                        <li className='socialLink'><Link to='#'><img src={kickLogo} alt='Kick Logo' /><span>Kick</span></Link></li>
-                        <li className='socialLink'><Link to='#'><img src={XLogo} alt='X Logo' /><span>X / Twitter</span></Link></li>
+                        <li data-aos='zoom-in-left' className='socialLink'><Link to='#'><img src={discordLogo} alt='Discord Logo' /><span>Discord</span></Link></li>
+                        <li data-aos='zoom-in-left' className='socialLink'><Link to='#'><img src={ytLogo} alt='Youtube Logo' /><span>Youtube</span></Link></li>
+                        <li data-aos='zoom-in-left' className='socialLink'><Link to='#'><img src={kickLogo} alt='Kick Logo' /><span>Kick</span></Link></li>
+                        <li data-aos='zoom-in-left' className='socialLink'><Link to='#'><img src={XLogo} alt='X Logo' /><span>X / Twitter</span></Link></li>
                     </ul>
                 </div>
             </div>

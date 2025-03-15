@@ -45,7 +45,7 @@ export let Leaderboard = () => {
                     <LeaderboardTime />
                 </div>
                 <div className="leaderboardBottom">
-                    <div className="leaderboardHeading">
+                    <div className="leaderboardHeading" data-aos="zoom-in-up">
                         <p className="playerNumber subHeading">#</p>
                         <p className="playerUsername subHeading">Username</p>
                         <div className="wegRew">  <p className="wagered subHeading">Wagered</p>
@@ -54,7 +54,7 @@ export let Leaderboard = () => {
                     </div>
                     <div className="leaderBoardProfilesContainer">
                         {
-                            profiles.map((prof) => <div className="leaderboardProfile" key={`profile${prof.number}`}>
+                            profiles.map((prof) => <div data-aos="zoom-in-up" className="leaderboardProfile" key={`profile${prof.number}`}>
                                 <p className="playerNumber"><span>{prof.number}</span></p>
                                 <div className="playerData">
                                     <img src={babyBoss} alt="Player Profile Picture" />
@@ -72,7 +72,6 @@ export let Leaderboard = () => {
                                 </div>
                             </div>
                             )
-
                         }
                     </div>
                 </div>
