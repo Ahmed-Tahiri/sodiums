@@ -19,9 +19,12 @@
       display: flex;
       justify-self: center;
       align-items: center;
-      > img {
-        height: 5rem;
-        aspect-ratio: 1;
+      > a {
+        text-decoration: none;
+        > img {
+          height: 5rem;
+          aspect-ratio: 1;
+        }
       }
     }
     & .hamBurgerBtn {
@@ -99,8 +102,11 @@
         width: 5rem;
         display: flex;
         justify-content: center;
-        > img {
-          height: 4rem;
+        > a {
+          text-decoration: none;
+          > img {
+            height: 4rem;
+          }
         }
       }
       & .hamBurgerBtn {
@@ -149,8 +155,11 @@
         width: 5.2rem;
         display: flex;
         justify-content: center;
-        > img {
-          height: 4.5rem;
+        > a {
+          text-decoration: none;
+          > img {
+            height: 4.5rem;
+          }
         }
       }
       & .hamBurgerBtn {
@@ -195,9 +204,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        > img {
-          height: 4.5rem;
-          aspect-ratio: 1;
+        > a {
+          text-decoration: none;
+          > img {
+            height: 4.5rem;
+            aspect-ratio: 1;
+          }
         }
       }
       > .navUl {
@@ -226,9 +238,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        > img {
-          height: 4.8rem;
-          aspect-ratio: 1;
+        > a {
+          text-decoration: none;
+          > img {
+            height: 4.8rem;
+            aspect-ratio: 1;
+          }
         }
       }
       > .navUl {
@@ -257,9 +272,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        > img {
-          height: 4.8rem;
-          aspect-ratio: 1;
+        > a {
+          text-decoration: none;
+          > img {
+            height: 4.8rem;
+            aspect-ratio: 1;
+          }
         }
       }
       > .navUl {

@@ -15,7 +15,7 @@ export let Navbar = () => {
             <header className="header">
                 <nav className="navbar">
                     <div className="logoSection" data-aos='zoom-in-right'>
-                        <img src={sodiumLogo} alt="sodium Logo" />
+                        <Link to='/'> <img src={sodiumLogo} alt="sodium Logo" /></Link>
                     </div>
                     <ul className={`navUl ${isOpen ? 'flex' : 'none'}`}>
                         <li onClick={hamburgerHandler} className='navLi'><Link to='/' className={path === '/' ? 'active' : ''}>Home</Link></li>
