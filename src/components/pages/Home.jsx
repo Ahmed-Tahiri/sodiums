@@ -18,7 +18,6 @@ export let Home = () => {
             <Landing />
             <div data-aos="fade-up-right"><BonusSection /></div>
             <div data-aos="fade-up-left">  <HomeLeaderboard /></div>
-
         </main>
         <Footer />
     </>
