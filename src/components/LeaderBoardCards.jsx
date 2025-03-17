@@ -116,7 +116,7 @@ export let LeaderBoardCards = ({ activePartner }) => {
 
     }
     useEffect(() => {
-        console.log('Data rendered');
+        console.log('');
     }, [cardsData]);
     return (
         <div className="leaderboardTextCards">
