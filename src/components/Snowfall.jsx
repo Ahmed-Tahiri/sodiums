@@ -1,7 +1,7 @@
 import React from "react";
 
 const Snowfall = () => {
-  const snowflakes = Array.from({ length: 20 }, () => "✦"); // Exactly 20 snowflakes ❄️
+  const snowflakes = Array.from({ length: 20 }, () => "✦");
 
   return (
     <div className="snowfall-container">

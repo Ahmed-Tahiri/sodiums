@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Snowfall />
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </>
   );
 }

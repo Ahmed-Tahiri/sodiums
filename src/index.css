@@ -34,8 +34,6 @@ html {
   font-size: 10px !important;
 }
 
-
-
 @keyframes snowfall {
   0% {
     transform: translateY(-10vh);
@@ -44,23 +42,22 @@ html {
 
   100% {
     transform: translateY(110vh);
-    /* Ensures snowflakes fall beyond viewport */
+
     opacity: 0;
   }
 }
 
 .snowfall-container {
   position: fixed;
-  /* Keeps snowflakes visible when scrolling */
+
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   pointer-events: none;
-  /* Prevents blocking clicks */
+
   overflow: hidden;
   z-index: 1000;
-  /* Ensures it's above other content */
 }
 
 .snowflake {
@@ -73,7 +70,6 @@ html {
   animation: snowfall linear infinite;
 }
 
-/* 20 Static Snowflakes */
 .snowflake:nth-child(1) {
   left: 2%;
   animation-duration: 8s;

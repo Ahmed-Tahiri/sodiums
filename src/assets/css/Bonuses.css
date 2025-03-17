@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 576px) {
   .bonusSection {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem !important;
     margin-top: 3rem;
     > .bonusTop {
       gap: 1rem;
@@ -173,7 +173,7 @@
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .bonusSection {
-    padding: 1rem 3rem;
+    padding: 1rem 3rem !important;
     margin-top: 3rem;
     > .bonusTop {
       gap: 1rem;
@@ -300,7 +300,7 @@
 @media screen and (min-width: 768px) and (max-width: 998px) {
   .bonusSection {
     width: 100%;
-    padding: 1rem 10rem;
+    padding: 1rem 10rem !important;
     margin-top: 3.5rem;
     > .bonusTop {
       width: 100%;
@@ -431,7 +431,7 @@
 @media screen and (min-width: 998px) and (max-width: 1200px) {
   .bonusSection {
     width: 100%;
-    padding: 1rem 16rem;
+    padding: 1rem 16rem !important;
     margin-top: 4rem;
     > .bonusTop {
       width: 100%;
@@ -562,7 +562,7 @@
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .bonusSection {
     width: 100%;
-    padding: 1rem 18rem;
+    padding: 1rem 18rem !important;
     margin-top: 4.5rem;
     > .bonusTop {
       width: 100%;
