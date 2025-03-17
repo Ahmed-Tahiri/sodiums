@@ -9,12 +9,51 @@ import RAINGG from '../../assets/images/RAINGG.svg'
 import CLASHGG from "../../assets/images/CLASH.svg";
 import gem from './../../assets/images/gem.webm';
 import babyBoss from './../../assets/images/babyBoss.png';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 export let Leaderboard = () => {
 
     useEffect(() => {
         document.title = 'Sodium | Leaderboard';
     }, []);
+
+    let [activePartner, setActivePartner] = useState(
+        {
+            clash: false,
+            big: true,
+            rain: false,
+        }
+    );
+    let clashBtnHandler = () => {
+        setActivePartner((prevState) => {
+            return {
+                ...prevState,
+                clash: true,
+                big: false,
+                rain: false,
+            }
+        })
+    }
+    let bigBtnHandler = () => {
+        setActivePartner((prevState) => {
+            return {
+                ...prevState,
+                clash: false,
+                big: true,
+                rain: false,
+            }
+        })
+    }
+    let rainBtnHandler = () => {
+        setActivePartner((prevState) => {
+            return {
+                ...prevState,
+                clash: false,
+                big: false,
+                rain: true,
+            }
+        })
+    }
+
     let profiles = [
         { 'number': '#4' },
         { 'number': '#5' },
@@ -36,12 +75,12 @@ export let Leaderboard = () => {
                             <p className="sectionPara" data-aos='zoom-in-left'>Complete in Wager Races and win huge Prizes!</p>
                         </div>
                         <div className="leaderboardPartners">
-                            <button data-aos='zoom-in-right' type='button' className="leaderBoardTag clashLogo"><video src={gem} loop muted playsInline autoPlay /><img src={CLASHGG} /></button>
-                            <button data-aos='zoom-in' type='button' className="leaderBoardTag  csgoLogo"><img src={CSGOLogo} alt="CSGO-BIG Logo" /></button>
-                            <button data-aos='zoom-in-left' type='button' className="leaderBoardTag rainggLogo"><img src={RAINGG} /></button>
+                            <button onClick={clashBtnHandler} type='button' className={`leaderBoardTag clashLogo ${activePartner.clash ? 'activeLeaderboard' : ''}`}><video src={gem} loop muted playsInline autoPlay /><img src={CLASHGG} /></button>
+                            <button onClick={bigBtnHandler} type='button' className={`leaderBoardTag  csgoLogo ${activePartner.big ? 'activeLeaderboard' : ''}`}><img src={CSGOLogo} alt="CSGO-BIG Logo" /></button>
+                            <button onClick={rainBtnHandler} type='button' className={`leaderBoardTag rainggLogo ${activePartner.rain ? 'activeLeaderboard' : ''}`}><img src={RAINGG} /></button>
                         </div>
                     </div>
-                    <LeaderBoardCards />
+                    <LeaderBoardCards activePartner={activePartner} />
                     <LeaderboardTime />
                 </div>
                 <div className="leaderboardBottom">

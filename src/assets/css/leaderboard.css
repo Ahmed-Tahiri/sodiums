@@ -68,6 +68,9 @@
             transform: scale(1.1);
           }
         }
+        > .activeLeaderboard {
+          background-color: var(--secondary-blue) !important;
+        }
         > .clashLogo {
           display: flex;
           flex-direction: row;
@@ -80,7 +83,6 @@
           }
         }
         > .csgoLogo {
-          background-color: var(--secondary-blue);
           & img {
             width: 10rem;
             margin-bottom: 0.5rem;
