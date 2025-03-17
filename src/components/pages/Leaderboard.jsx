@@ -92,7 +92,9 @@ export let Leaderboard = () => {
         ];
 
     }
-    useEffect(() => { }, [profiles]);
+    useEffect(() => {
+        console.log('');
+    }, [profiles]);
     return (
         <>
             <BgDesign />
