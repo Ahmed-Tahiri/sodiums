@@ -1,13 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Leaderboard } from "./components/pages/Leaderboard";
-import { Home } from "./components/pages/Home";
-import { Bonuses } from "./components/pages/Bonuses";
-import { Cases } from "./components/pages/Cases";
-import { Profile } from "./components/pages/Profile";
-import { Store } from "./components/pages/Store";
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Bonuses } from "./components/pages/Bonuses";
+import { Cases } from "./components/pages/Cases";
+import { Home } from "./components/pages/Home";
+import { Leaderboard } from "./components/pages/Leaderboard";
+import { Profile } from "./components/pages/Profile";
+import { Store } from "./components/pages/Store";
+import Snowfall from "./components/Snowfall";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -23,7 +24,12 @@ function App() {
     AOS.init({ duration: 700 });
   }, []);
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Snowfall />
+      <RouterProvider router={router} />;
+    </>
+  );
 }
 
 export default App;
