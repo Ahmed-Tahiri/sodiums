@@ -1,0 +1,11 @@
+.bonusSection {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10rem 0 5rem;
+  gap: 8rem;
+}
