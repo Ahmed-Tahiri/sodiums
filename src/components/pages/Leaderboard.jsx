@@ -54,15 +54,45 @@ export let Leaderboard = () => {
         })
     }
 
-    let profiles = [
-        { 'number': '#4' },
-        { 'number': '#5' },
-        { 'number': '#6' },
-        { 'number': '#7' },
-        { 'number': '#8' },
-        { 'number': '#9' },
-        { 'number': '#10' },
-    ]
+    let profiles = [];
+    if (activePartner.big) {
+
+        profiles = [
+            { 'number': '#4', playerName: 'Bo****y' },
+            { 'number': '#5', playerName: 'Bo****y' },
+            { 'number': '#6', playerName: 'Bo****y' },
+            { 'number': '#7', playerName: 'Bo****y' },
+            { 'number': '#8', playerName: 'Bo****y' },
+            { 'number': '#9', playerName: 'Bo****y' },
+            { 'number': '#10', playerName: 'Bo****y' },
+        ];
+    }
+    if (activePartner.rain) {
+
+        profiles = [
+            { 'number': '#4', playerName: 'Sc****y' },
+            { 'number': '#5', playerName: 'Sc****y' },
+            { 'number': '#6', playerName: 'Sc****y' },
+            { 'number': '#7', playerName: 'Sc****y' },
+            { 'number': '#8', playerName: 'Sc****y' },
+            { 'number': '#9', playerName: 'Sc****y' },
+            { 'number': '#10', playerName: 'Sc****y' },
+        ];
+    }
+    if (activePartner.clash) {
+
+        profiles = [
+            { 'number': '#4', playerName: 'An****y' },
+            { 'number': '#5', playerName: 'An****y' },
+            { 'number': '#6', playerName: 'An****y' },
+            { 'number': '#7', playerName: 'An****y' },
+            { 'number': '#8', playerName: 'An****y' },
+            { 'number': '#9', playerName: 'An****y' },
+            { 'number': '#10', playerName: 'An****y' },
+        ];
+
+    }
+    useEffect(() => { }, [profiles]);
     return (
         <>
             <BgDesign />
@@ -97,7 +127,7 @@ export let Leaderboard = () => {
                                 <p className="playerNumber"><span>{prof.number}</span></p>
                                 <div className="playerData">
                                     <img src={babyBoss} alt="Player Profile Picture" />
-                                    <span className="playerName">Bo****y</span>
+                                    <span className="playerName">{prof.playerName}</span>
                                 </div>
                                 <div className="wegRewContainer">
                                     <p className="wageredData">
